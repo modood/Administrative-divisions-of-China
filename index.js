@@ -12,7 +12,6 @@ exports.getProvinces = function () {
   return division.filter(a => a[4] === '000000').map(a => { return { code: a[0], name: a[1] } })
 }
 
-
 /**
  * 获取城市数据
  * @Author   https://github.com/modood
@@ -20,5 +19,14 @@ exports.getProvinces = function () {
  */
 exports.getCities = function () {
   return division.filter(a => a[2]).map(a => { return { code: a[0], name: a[2], parent_code: a[4] } })
+}
+
+/**
+ * 获取区县数据
+ * @Author   https://github.com/modood
+ * @DateTime 2016-10-08 18:10
+ */
+exports.getAreas = function () {
+  return division.filter(a => a[3]).map(a => { return { code: a[0], name: a[3], parent_code: a[4] } })
 }
 
