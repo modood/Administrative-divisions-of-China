@@ -118,10 +118,13 @@ function outputJSON () {
 }
 
 module.exports = {
-  getProvinces,
-  getCities,
-  getAreas,
-  getStreets,
   outputJSON,
+  provinces: require(path.resolve(__dirname, 'dist/provinces.min.json')),
+  cities:    require(path.resolve(__dirname, 'dist/cities.min.json')),
+  areas:     require(path.resolve(__dirname, 'dist/areas.min.json')),
+  streets:   require(path.resolve(__dirname, 'dist/streets.min.json')),
+  address2:  require(path.resolve(__dirname, 'dist/address2.min.json')),
+  address3:  require(path.resolve(__dirname, 'dist/address3.min.json')),
+  address4:  require(path.resolve(__dirname, 'dist/address4.min.json')),
 }
 
