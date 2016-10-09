@@ -58,6 +58,27 @@ function getAddressPC () {
 }
 
 /**
+ * 获取省市区三级联动数据
+ * @Author   https://github.com/modood
+ * @DateTime 2016-10-09 16:00
+ */
+function getAddressPCA () {
+  const doc = {}
+  const provinces = getProvinces()
+  const cities = getCities()
+  const areas = getAreas()
+
+  provinces.forEach(p => {
+    doc[p.name] = {}
+    cities.filter(c => p.code === c.parent_code).forEach(c => {
+      doc[p.name][c.name] = areas.filter(a => c.code === a.parent_code).map(a => a.name)
+    })
+  })
+  return doc
+}
+
+
+/**
  * 输出 JSON 文件
  * @Author   https://github.com/modood
  * @DateTime 2016-10-08 17:16
