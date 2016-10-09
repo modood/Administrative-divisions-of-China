@@ -111,9 +111,9 @@ function outputJSON () {
   fs.writeFileSync(path.resolve(__dirname, 'dist/cities.min.json'),           JSON.stringify(getCities()))
   fs.writeFileSync(path.resolve(__dirname, 'dist/areas.min.json'),            JSON.stringify(getAreas()))
   fs.writeFileSync(path.resolve(__dirname, 'dist/streets.min.json'),          JSON.stringify(getStreets()))
-  fs.writeFileSync(path.resolve(__dirname, 'dist/address_p_c.min.json'),      JSON.stringify(getAddressPC()))
-  fs.writeFileSync(path.resolve(__dirname, 'dist/address_p_c_a.min.json'),    JSON.stringify(getAddressPCA()))
-  fs.writeFileSync(path.resolve(__dirname, 'dist/address_p_c_a_s.min.json'),  JSON.stringify(getAddressPCAS()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/address2.min.json'),         JSON.stringify(getAddressPC()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/address3.min.json'),         JSON.stringify(getAddressPCA()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/address4.min.json'),         JSON.stringify(getAddressPCAS()))
   console.log('It\'s saved!')
 }
 
