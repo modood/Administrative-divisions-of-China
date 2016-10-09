@@ -107,10 +107,13 @@ function getAddressPCAS () {
  * @DateTime 2016-10-08 17:16
  */
 function outputJSON () {
-  fs.writeFileSync(path.resolve(__dirname, 'dist/provinces.json'), JSON.stringify(getProvinces()))
-  fs.writeFileSync(path.resolve(__dirname, 'dist/cities.json'),    JSON.stringify(getCities()))
-  fs.writeFileSync(path.resolve(__dirname, 'dist/areas.json'),     JSON.stringify(getAreas()))
-  fs.writeFileSync(path.resolve(__dirname, 'dist/streets.json'),   JSON.stringify(getStreets()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/provinces.json'),        JSON.stringify(getProvinces()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/cities.json'),           JSON.stringify(getCities()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/areas.json'),            JSON.stringify(getAreas()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/streets.json'),          JSON.stringify(getStreets()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/address_p_c.json'),      JSON.stringify(getAddressPC()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/address_p_c_a.json'),    JSON.stringify(getAddressPCA()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/address_p_c_a_s.json'),  JSON.stringify(getAddressPCAS()))
   console.log('It\'s saved!')
 }
 
