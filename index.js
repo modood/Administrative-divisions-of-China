@@ -1,5 +1,8 @@
 'use strict'
 
+const fs = require('fs')
+const path = require('path')
+
 const division = require('./data/division.json')
 const street = require('./data/street.json')
 
@@ -8,7 +11,7 @@ const street = require('./data/street.json')
  * @Author   https://github.com/modood
  * @DateTime 2016-10-08 15:50
  */
-exports.getProvinces = function () {
+function getProvinces () {
   return division.filter(a => a[4] === '000000').map(a => { return { code: a[0], name: a[1] } })
 }
 
@@ -17,7 +20,7 @@ exports.getProvinces = function () {
  * @Author   https://github.com/modood
  * @DateTime 2016-10-08 17:58
  */
-exports.getCities = function () {
+function getCities () {
   return division.filter(a => a[2]).map(a => { return { code: a[0], name: a[2], parent_code: a[4] } })
 }
 
@@ -26,7 +29,37 @@ exports.getCities = function () {
  * @Author   https://github.com/modood
  * @DateTime 2016-10-08 18:10
  */
-exports.getAreas = function () {
+function getAreas () {
   return division.filter(a => a[3]).map(a => { return { code: a[0], name: a[3], parent_code: a[4] } })
+}
+
+/**
+ * 获取乡镇（街道）数据
+ * @Author   https://github.com/modood
+ * @DateTime 2016-10-09 15:08
+ */
+function getStreets () {
+  return street.map(a => { return { code: a[0], name: a[1], pinyin: a[3], parent_code: a[2]} })
+}
+
+/**
+ * 输出 JSON 文件
+ * @Author   https://github.com/modood
+ * @DateTime 2016-10-08 17:16
+ */
+function outputJSON () {
+  fs.writeFileSync(path.resolve(__dirname, 'dist/provinces.json'), JSON.stringify(getProvinces()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/cities.json'),    JSON.stringify(getCities()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/areas.json'),     JSON.stringify(getAreas()))
+  fs.writeFileSync(path.resolve(__dirname, 'dist/streets.json'),   JSON.stringify(getStreets()))
+  console.log('It\'s saved!')
+}
+
+module.exports = {
+  getProvinces,
+  getCities,
+  getAreas,
+  getStreets,
+  outputJSON,
 }
 
