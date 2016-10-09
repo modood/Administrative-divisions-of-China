@@ -43,6 +43,21 @@ function getStreets () {
 }
 
 /**
+ * 获取省市二级联动数据
+ * @Author   https://github.com/modood
+ * @DateTime 2016-10-09 15:25
+ */
+function getAddressPC () {
+  const doc = {}
+  const provinces = getProvinces()
+  const cities = getCities()
+
+  provinces.forEach(p => doc[p.name] = cities.filter(c => p.code === c.parent_code).map(c => c.name))
+
+  return doc
+}
+
+/**
  * 输出 JSON 文件
  * @Author   https://github.com/modood
  * @DateTime 2016-10-08 17:16
