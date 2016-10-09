@@ -77,6 +77,29 @@ function getAddressPCA () {
   return doc
 }
 
+/**
+ * 获取省市区镇四级联动数据
+ * @Author   https://github.com/modood
+ * @DateTime 2016-10-09 16:09
+ */
+function getAddressPCAS () {
+  const doc = {}
+  const provinces = getProvinces()
+  const cities = getCities()
+  const areas = getAreas()
+  const streets = getStreets()
+
+  provinces.forEach(p => {
+    doc[p.name] = {}
+    cities.filter(c => p.code === c.parent_code).forEach(c => {
+      doc[p.name][c.name] = {}
+      areas.filter(a => c.code === a.parent_code).forEach(a => {
+        doc[p.name][c.name][a.name] = streets.filter(s => a.code === s.parent_code).map(s => s.name)
+      })
+    })
+  })
+  return doc
+}
 
 /**
  * 输出 JSON 文件
