@@ -2,6 +2,7 @@
 
 中华人民共和国行政区划：省份、城市、区县、乡镇（街道）
 
+[![Deps](https://david-dm.org/modood/china-division.svg)](https://david-dm.org/modood/china-division)
 [![npm](https://img.shields.io/npm/v/china-division.svg)](https://www.npmjs.com/package/china-division)
 [![npm](https://img.shields.io/npm/dt/china-division.svg)](https://www.npmjs.com/package/china-division)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/modood/Administrative-divisions-of-China/master/LICENSE)
@@ -18,13 +19,33 @@
 | “省、市、区” 三级联动数据                    | [address3.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/address3.json) | [address3.min.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/address3.min.json) |
 | “省、市、区、镇” 四级联动数据                | [address4.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/address4.json) | [address4.min.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/address4.min.json) |
 
+## TEST
+
+```
+$ npm test
+
+> mocha -t 5000
+
+  中华人民共和国行政区划：
+    ✓ 省份数据
+    ✓ 城市数据
+    ✓ 区县数据
+    ✓ 乡镇（街道）数据
+    ✓ “省、市” 二级联动数据
+    ✓ “省、市、区” 三级联动数据
+    ✓ “省、市、区、镇” 四级联动数据
+    ✓ “某省、某市、某县、某镇” 不存在
+
+  8 passing (12ms)
+```
+
 ## NPM(不建议)
 
 > 注意：
 
 > 由于获取数据为同步操作，出于性能考虑，不建议使用 Node 模块这种方式。
 
-> 建议 [下载 JSON 文件](https://github.com/modood/Administrative-divisions-of-China/tree/master/dist)
+> 建议 [下载 JSON 文件](https://github.com/modood/Administrative-divisions-of-China#json)
 > 然后在代码里使用 require 引入，原因参考 [Node.js Modules](https://nodejs.org/dist/latest-v4.x/docs/api/modules.html)。
 
 安装：
