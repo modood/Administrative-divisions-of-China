@@ -22,7 +22,7 @@
 
 > 注意：
 
-> 由于获取数据为同步操作，出于性能考虑，不建议使用 Node 模块这种方式使用。
+> 由于获取数据为同步操作，出于性能考虑，不建议使用 Node 模块这种方式。
 
 > 建议 [下载 JSON 文件](https://github.com/modood/Administrative-divisions-of-China/tree/master/dist)
 > 然后在代码里使用 require 引入，原因参考 [Node.js Modules](https://nodejs.org/dist/latest-v4.x/docs/api/modules.html)。
