@@ -2,7 +2,7 @@
 
 中华人民共和国行政区划：省份、城市、区县、乡镇（街道）
 
-[![Deps](https://david-dm.org/modood/china-division.svg)](https://david-dm.org/modood/china-division)
+[![Deps](https://david-dm.org/modood/Administrative-divisions-of-China.svg)](https://david-dm.org/modood/Administrative-divisions-of-China)
 [![npm](https://img.shields.io/npm/v/china-division.svg)](https://www.npmjs.com/package/china-division)
 [![npm](https://img.shields.io/npm/dt/china-division.svg)](https://www.npmjs.com/package/china-division)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/modood/Administrative-divisions-of-China/master/LICENSE)
