@@ -145,13 +145,13 @@
     "parent_code": "120100"
   },
   {
-    "code": "120221",
-    "name": "宁河县",
+    "code": "120117",
+    "name": "宁河区",
     "parent_code": "120100"
   },
   {
-    "code": "120223",
-    "name": "静海县",
+    "code": "120118",
+    "name": "静海区",
     "parent_code": "120100"
   },
   {
@@ -260,11 +260,6 @@
     "parent_code": "130100"
   },
   {
-    "code": "130181",
-    "name": "辛集市",
-    "parent_code": "130100"
-  },
-  {
     "code": "130183",
     "name": "晋州市",
     "parent_code": "130100"
@@ -370,6 +365,11 @@
     "parent_code": "130300"
   },
   {
+    "code": "130306",
+    "name": "抚宁区",
+    "parent_code": "130300"
+  },
+  {
     "code": "130321",
     "name": "青龙满族自治县",
     "parent_code": "130300"
@@ -377,11 +377,6 @@
   {
     "code": "130322",
     "name": "昌黎县",
-    "parent_code": "130300"
-  },
-  {
-    "code": "130323",
-    "name": "抚宁县",
     "parent_code": "130300"
   },
   {
@@ -596,27 +591,27 @@
   },
   {
     "code": "130602",
-    "name": "新市区",
+    "name": "竞秀区",
     "parent_code": "130600"
   },
   {
-    "code": "130603",
-    "name": "北市区",
+    "code": "130606",
+    "name": "莲池区",
     "parent_code": "130600"
   },
   {
-    "code": "130604",
-    "name": "南市区",
+    "code": "130607",
+    "name": "满城区",
     "parent_code": "130600"
   },
   {
-    "code": "130621",
-    "name": "满城县",
+    "code": "130608",
+    "name": "清苑区",
     "parent_code": "130600"
   },
   {
-    "code": "130622",
-    "name": "清苑县",
+    "code": "130609",
+    "name": "徐水区",
     "parent_code": "130600"
   },
   {
@@ -627,11 +622,6 @@
   {
     "code": "130624",
     "name": "阜平县",
-    "parent_code": "130600"
-  },
-  {
-    "code": "130625",
-    "name": "徐水县",
     "parent_code": "130600"
   },
   {
@@ -702,11 +692,6 @@
   {
     "code": "130681",
     "name": "涿州市",
-    "parent_code": "130600"
-  },
-  {
-    "code": "130682",
-    "name": "定州市",
     "parent_code": "130600"
   },
   {
@@ -1068,6 +1053,16 @@
     "code": "131182",
     "name": "深州市",
     "parent_code": "131100"
+  },
+  {
+    "code": "139001",
+    "name": "定州市",
+    "parent_code": "139000"
+  },
+  {
+    "code": "139002",
+    "name": "辛集市",
+    "parent_code": "139000"
   },
   {
     "code": "140101",
@@ -4145,11 +4140,6 @@
     "parent_code": "320400"
   },
   {
-    "code": "320405",
-    "name": "戚墅堰区",
-    "parent_code": "320400"
-  },
-  {
     "code": "320411",
     "name": "新北区",
     "parent_code": "320400"
@@ -4160,13 +4150,13 @@
     "parent_code": "320400"
   },
   {
-    "code": "320481",
-    "name": "溧阳市",
+    "code": "320413",
+    "name": "金坛区",
     "parent_code": "320400"
   },
   {
-    "code": "320482",
-    "name": "金坛市",
+    "code": "320481",
+    "name": "溧阳市",
     "parent_code": "320400"
   },
   {
@@ -4360,6 +4350,11 @@
     "parent_code": "320900"
   },
   {
+    "code": "320904",
+    "name": "大丰区",
+    "parent_code": "320900"
+  },
+  {
     "code": "320921",
     "name": "响水县",
     "parent_code": "320900"
@@ -4387,11 +4382,6 @@
   {
     "code": "320981",
     "name": "东台市",
-    "parent_code": "320900"
-  },
-  {
-    "code": "320982",
-    "name": "大丰市",
     "parent_code": "320900"
   },
   {
@@ -4680,8 +4670,8 @@
     "parent_code": "330300"
   },
   {
-    "code": "330322",
-    "name": "洞头县",
+    "code": "330305",
+    "name": "洞头区",
     "parent_code": "330300"
   },
   {
@@ -6140,13 +6130,13 @@
     "parent_code": "360100"
   },
   {
-    "code": "360121",
-    "name": "南昌县",
+    "code": "360112",
+    "name": "新建区",
     "parent_code": "360100"
   },
   {
-    "code": "360122",
-    "name": "新建县",
+    "code": "360121",
+    "name": "南昌县",
     "parent_code": "360100"
   },
   {
@@ -6610,13 +6600,13 @@
     "parent_code": "361100"
   },
   {
-    "code": "361121",
-    "name": "上饶县",
+    "code": "361103",
+    "name": "广丰区",
     "parent_code": "361100"
   },
   {
-    "code": "361122",
-    "name": "广丰县",
+    "code": "361121",
+    "name": "上饶县",
     "parent_code": "361100"
   },
   {
@@ -7120,8 +7110,8 @@
     "parent_code": "371000"
   },
   {
-    "code": "371081",
-    "name": "文登市",
+    "code": "371003",
+    "name": "文登区",
     "parent_code": "371000"
   },
   {
@@ -7522,6 +7512,11 @@
   {
     "code": "410205",
     "name": "禹王台区",
+    "parent_code": "410200"
+  },
+  {
+    "code": "410211",
+    "name": "金明区",
     "parent_code": "410200"
   },
   {
@@ -9935,6 +9930,11 @@
     "parent_code": "441200"
   },
   {
+    "code": "441204",
+    "name": "高要区",
+    "parent_code": "441200"
+  },
+  {
     "code": "441223",
     "name": "广宁县",
     "parent_code": "441200"
@@ -9952,11 +9952,6 @@
   {
     "code": "441226",
     "name": "德庆县",
-    "parent_code": "441200"
-  },
-  {
-    "code": "441283",
-    "name": "高要市",
     "parent_code": "441200"
   },
   {
@@ -10295,8 +10290,8 @@
     "parent_code": "450100"
   },
   {
-    "code": "450122",
-    "name": "武鸣县",
+    "code": "450110",
+    "name": "武鸣区",
     "parent_code": "450100"
   },
   {
@@ -10685,11 +10680,6 @@
     "parent_code": "451000"
   },
   {
-    "code": "451025",
-    "name": "靖西县",
-    "parent_code": "451000"
-  },
-  {
     "code": "451026",
     "name": "那坡县",
     "parent_code": "451000"
@@ -10720,6 +10710,11 @@
     "parent_code": "451000"
   },
   {
+    "code": "451081",
+    "name": "靖西市",
+    "parent_code": "451000"
+  },
+  {
     "code": "451101",
     "name": "市辖区",
     "parent_code": "451100"
@@ -10727,11 +10722,6 @@
   {
     "code": "451102",
     "name": "八步区",
-    "parent_code": "451100"
-  },
-  {
-    "code": "451119",
-    "name": "平桂管理区",
     "parent_code": "451100"
   },
   {
@@ -11135,13 +11125,13 @@
     "parent_code": "500100"
   },
   {
-    "code": "500223",
-    "name": "潼南县",
+    "code": "500152",
+    "name": "潼南区",
     "parent_code": "500100"
   },
   {
-    "code": "500226",
-    "name": "荣昌县",
+    "code": "500153",
+    "name": "荣昌区",
     "parent_code": "500100"
   },
   {
@@ -12050,8 +12040,8 @@
     "parent_code": "513200"
   },
   {
-    "code": "513321",
-    "name": "康定县",
+    "code": "513301",
+    "name": "康定市",
     "parent_code": "513300"
   },
   {
@@ -12880,11 +12870,6 @@
     "parent_code": "530500"
   },
   {
-    "code": "530522",
-    "name": "腾冲县",
-    "parent_code": "530500"
-  },
-  {
     "code": "530523",
     "name": "龙陵县",
     "parent_code": "530500"
@@ -12892,6 +12877,11 @@
   {
     "code": "530524",
     "name": "昌宁县",
+    "parent_code": "530500"
+  },
+  {
+    "code": "530581",
+    "name": "腾冲市",
     "parent_code": "530500"
   },
   {
@@ -13420,11 +13410,6 @@
     "parent_code": "540100"
   },
   {
-    "code": "540201",
-    "name": "市辖区",
-    "parent_code": "540200"
-  },
-  {
     "code": "540202",
     "name": "桑珠孜区",
     "parent_code": "540200"
@@ -13515,11 +13500,6 @@
     "parent_code": "540200"
   },
   {
-    "code": "540301",
-    "name": "市辖区",
-    "parent_code": "540300"
-  },
-  {
     "code": "540302",
     "name": "卡若区",
     "parent_code": "540300"
@@ -13573,6 +13553,41 @@
     "code": "540330",
     "name": "边坝县",
     "parent_code": "540300"
+  },
+  {
+    "code": "540402",
+    "name": "巴宜区",
+    "parent_code": "540400"
+  },
+  {
+    "code": "540421",
+    "name": "工布江达县",
+    "parent_code": "540400"
+  },
+  {
+    "code": "540422",
+    "name": "米林县",
+    "parent_code": "540400"
+  },
+  {
+    "code": "540423",
+    "name": "墨脱县",
+    "parent_code": "540400"
+  },
+  {
+    "code": "540424",
+    "name": "波密县",
+    "parent_code": "540400"
+  },
+  {
+    "code": "540425",
+    "name": "察隅县",
+    "parent_code": "540400"
+  },
+  {
+    "code": "540426",
+    "name": "朗县",
+    "parent_code": "540400"
   },
   {
     "code": "542221",
@@ -13723,41 +13738,6 @@
     "code": "542527",
     "name": "措勤县",
     "parent_code": "542500"
-  },
-  {
-    "code": "542621",
-    "name": "林芝县",
-    "parent_code": "542600"
-  },
-  {
-    "code": "542622",
-    "name": "工布江达县",
-    "parent_code": "542600"
-  },
-  {
-    "code": "542623",
-    "name": "米林县",
-    "parent_code": "542600"
-  },
-  {
-    "code": "542624",
-    "name": "墨脱县",
-    "parent_code": "542600"
-  },
-  {
-    "code": "542625",
-    "name": "波密县",
-    "parent_code": "542600"
-  },
-  {
-    "code": "542626",
-    "name": "察隅县",
-    "parent_code": "542600"
-  },
-  {
-    "code": "542627",
-    "name": "朗县",
-    "parent_code": "542600"
   },
   {
     "code": "610101",
@@ -14252,6 +14232,11 @@
   {
     "code": "610901",
     "name": "市辖区",
+    "parent_code": "610900"
+  },
+  {
+    "code": "610902",
+    "name": "汉滨区",
     "parent_code": "610900"
   },
   {
@@ -14870,18 +14855,13 @@
     "parent_code": "630100"
   },
   {
-    "code": "630201",
-    "name": "市辖区",
-    "parent_code": "630200"
-  },
-  {
     "code": "630202",
     "name": "乐都区",
     "parent_code": "630200"
   },
   {
-    "code": "630221",
-    "name": "平安县",
+    "code": "630203",
+    "name": "平安区",
     "parent_code": "630200"
   },
   {
@@ -15260,19 +15240,19 @@
     "parent_code": "650200"
   },
   {
-    "code": "652101",
-    "name": "吐鲁番市",
-    "parent_code": "652100"
+    "code": "650402",
+    "name": "高昌区",
+    "parent_code": "650400"
   },
   {
-    "code": "652122",
+    "code": "650421",
     "name": "鄯善县",
-    "parent_code": "652100"
+    "parent_code": "650400"
   },
   {
-    "code": "652123",
+    "code": "650422",
     "name": "托克逊县",
-    "parent_code": "652100"
+    "parent_code": "650400"
   },
   {
     "code": "652201",
@@ -15610,84 +15590,74 @@
     "parent_code": "654000"
   },
   {
-    "code": "654200",
-    "name": "塔城地区",
-    "parent_code": "654000"
-  },
-  {
     "code": "654201",
     "name": "塔城市",
-    "parent_code": "654000"
+    "parent_code": "654200"
   },
   {
     "code": "654202",
     "name": "乌苏市",
-    "parent_code": "654000"
+    "parent_code": "654200"
   },
   {
     "code": "654221",
     "name": "额敏县",
-    "parent_code": "654000"
+    "parent_code": "654200"
   },
   {
     "code": "654223",
     "name": "沙湾县",
-    "parent_code": "654000"
+    "parent_code": "654200"
   },
   {
     "code": "654224",
     "name": "托里县",
-    "parent_code": "654000"
+    "parent_code": "654200"
   },
   {
     "code": "654225",
     "name": "裕民县",
-    "parent_code": "654000"
+    "parent_code": "654200"
   },
   {
     "code": "654226",
     "name": "和布克赛尔蒙古自治县",
-    "parent_code": "654000"
-  },
-  {
-    "code": "654300",
-    "name": "阿勒泰地区",
-    "parent_code": "654000"
+    "parent_code": "654200"
   },
   {
     "code": "654301",
     "name": "阿勒泰市",
-    "parent_code": "654000"
+    "parent_code": "654300"
   },
   {
     "code": "654321",
     "name": "布尔津县",
-    "parent_code": "654000"
+    "parent_code": "654300"
   },
   {
     "code": "654322",
     "name": "富蕴县",
-    "parent_code": "654000"
+    "parent_code": "654300"
   },
   {
     "code": "654323",
     "name": "福海县",
-    "parent_code": "654000"
+    "parent_code": "654300"
   },
   {
     "code": "654324",
     "name": "哈巴河县",
-    "parent_code": "654000"
+    "parent_code": "654300"
   },
   {
     "code": "654325",
     "name": "青河县",
-    "parent_code": "654000"
+    "parent_code": "654300"
   },
   {
     "code": "654326",
     "name": "吉木乃县",
-    "parent_code": "654000"
+    "parent_code": "654300"
   },
   {
     "code": "659001",
@@ -15708,1935 +15678,5 @@
     "code": "659004",
     "name": "五家渠市",
     "parent_code": "659000"
-  },
-  {
-    "code": "659005",
-    "name": "北屯市",
-    "parent_code": "659000"
-  },
-  {
-    "code": "659006",
-    "name": "铁门关市",
-    "parent_code": "659000"
-  },
-  {
-    "code": "659007",
-    "name": "双河市",
-    "parent_code": "659000"
-  },
-  {
-    "code": "710101",
-    "name": "松山区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710102",
-    "name": "信义区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710103",
-    "name": "大安区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710104",
-    "name": "中山区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710105",
-    "name": "中正区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710106",
-    "name": "大同区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710107",
-    "name": "万华区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710108",
-    "name": "文山区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710109",
-    "name": "南港区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710110",
-    "name": "内湖区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710111",
-    "name": "士林区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710112",
-    "name": "北投区",
-    "parent_code": "710100"
-  },
-  {
-    "code": "710201",
-    "name": "盐埕区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710202",
-    "name": "鼓山区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710203",
-    "name": "左营区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710204",
-    "name": "楠梓区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710205",
-    "name": "三民区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710206",
-    "name": "新兴区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710207",
-    "name": "前金区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710208",
-    "name": "苓雅区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710209",
-    "name": "前镇区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710210",
-    "name": "旗津区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710211",
-    "name": "小港区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710212",
-    "name": "凤山区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710213",
-    "name": "林园区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710214",
-    "name": "大寮区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710215",
-    "name": "大树区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710216",
-    "name": "大社区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710217",
-    "name": "仁武区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710218",
-    "name": "鸟松区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710219",
-    "name": "冈山区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710220",
-    "name": "桥头区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710221",
-    "name": "燕巢区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710222",
-    "name": "田寮区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710223",
-    "name": "阿莲区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710224",
-    "name": "路竹区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710225",
-    "name": "湖内区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710226",
-    "name": "茄萣区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710227",
-    "name": "永安区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710228",
-    "name": "弥陀区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710229",
-    "name": "梓官区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710230",
-    "name": "旗山区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710231",
-    "name": "美浓区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710232",
-    "name": "六龟区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710233",
-    "name": "甲仙区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710234",
-    "name": "杉林区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710235",
-    "name": "内门区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710236",
-    "name": "茂林区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710237",
-    "name": "桃源区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710238",
-    "name": "那玛夏区",
-    "parent_code": "710200"
-  },
-  {
-    "code": "710301",
-    "name": "中正区",
-    "parent_code": "710300"
-  },
-  {
-    "code": "710302",
-    "name": "七堵区",
-    "parent_code": "710300"
-  },
-  {
-    "code": "710303",
-    "name": "暖暖区",
-    "parent_code": "710300"
-  },
-  {
-    "code": "710304",
-    "name": "仁爱区",
-    "parent_code": "710300"
-  },
-  {
-    "code": "710305",
-    "name": "中山区",
-    "parent_code": "710300"
-  },
-  {
-    "code": "710306",
-    "name": "安乐区",
-    "parent_code": "710300"
-  },
-  {
-    "code": "710307",
-    "name": "信义区",
-    "parent_code": "710300"
-  },
-  {
-    "code": "710401",
-    "name": "中区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710402",
-    "name": "东区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710403",
-    "name": "南区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710404",
-    "name": "西区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710405",
-    "name": "北区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710406",
-    "name": "西屯区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710407",
-    "name": "南屯区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710408",
-    "name": "北屯区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710409",
-    "name": "丰原区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710410",
-    "name": "东势区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710411",
-    "name": "大甲区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710412",
-    "name": "清水区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710413",
-    "name": "沙鹿区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710414",
-    "name": "梧栖区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710415",
-    "name": "后里区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710416",
-    "name": "神冈区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710417",
-    "name": "潭子区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710418",
-    "name": "大雅区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710419",
-    "name": "新社区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710420",
-    "name": "石冈区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710421",
-    "name": "外埔区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710422",
-    "name": "大安区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710423",
-    "name": "乌日区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710424",
-    "name": "大肚区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710425",
-    "name": "龙井区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710426",
-    "name": "雾峰区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710427",
-    "name": "太平区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710428",
-    "name": "大里区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710429",
-    "name": "和平区",
-    "parent_code": "710400"
-  },
-  {
-    "code": "710501",
-    "name": "东区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710502",
-    "name": "南区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710504",
-    "name": "北区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710506",
-    "name": "安南区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710507",
-    "name": "安平区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710508",
-    "name": "中西区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710509",
-    "name": "新营区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710510",
-    "name": "盐水区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710511",
-    "name": "白河区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710512",
-    "name": "柳营区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710513",
-    "name": "后壁区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710514",
-    "name": "东山区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710515",
-    "name": "麻豆区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710516",
-    "name": "下营区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710517",
-    "name": "六甲区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710518",
-    "name": "官田区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710519",
-    "name": "大内区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710520",
-    "name": "佳里区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710521",
-    "name": "学甲区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710522",
-    "name": "西港区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710523",
-    "name": "七股区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710524",
-    "name": "将军区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710525",
-    "name": "北门区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710526",
-    "name": "新化区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710527",
-    "name": "善化区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710528",
-    "name": "新市区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710529",
-    "name": "安定区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710530",
-    "name": "山上区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710531",
-    "name": "玉井区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710532",
-    "name": "楠西区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710533",
-    "name": "南化区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710534",
-    "name": "左镇区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710535",
-    "name": "仁德区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710536",
-    "name": "归仁区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710537",
-    "name": "关庙区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710538",
-    "name": "龙崎区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710539",
-    "name": "永康区",
-    "parent_code": "710500"
-  },
-  {
-    "code": "710601",
-    "name": "东区",
-    "parent_code": "710600"
-  },
-  {
-    "code": "710602",
-    "name": "北区",
-    "parent_code": "710600"
-  },
-  {
-    "code": "710603",
-    "name": "香山区",
-    "parent_code": "710600"
-  },
-  {
-    "code": "710701",
-    "name": "东区",
-    "parent_code": "710700"
-  },
-  {
-    "code": "710702",
-    "name": "西区",
-    "parent_code": "710700"
-  },
-  {
-    "code": "710801",
-    "name": "板桥区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710802",
-    "name": "三重区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710803",
-    "name": "中和区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710804",
-    "name": "永和区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710805",
-    "name": "新庄区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710806",
-    "name": "新店区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710807",
-    "name": "树林区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710808",
-    "name": "莺歌区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710809",
-    "name": "三峡区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710810",
-    "name": "淡水区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710811",
-    "name": "汐止区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710812",
-    "name": "瑞芳区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710813",
-    "name": "土城区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710814",
-    "name": "芦洲区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710815",
-    "name": "五股区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710816",
-    "name": "泰山区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710817",
-    "name": "林口区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710818",
-    "name": "深坑区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710819",
-    "name": "石碇区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710820",
-    "name": "坪林区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710821",
-    "name": "三芝区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710822",
-    "name": "石门区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710823",
-    "name": "八里区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710824",
-    "name": "平溪区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710825",
-    "name": "双溪区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710826",
-    "name": "贡寮区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710827",
-    "name": "金山区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710828",
-    "name": "万里区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "710829",
-    "name": "乌来区",
-    "parent_code": "710800"
-  },
-  {
-    "code": "712201",
-    "name": "宜兰市",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712221",
-    "name": "罗东镇",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712222",
-    "name": "苏澳镇",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712223",
-    "name": "头城镇",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712224",
-    "name": "礁溪乡",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712225",
-    "name": "壮围乡",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712226",
-    "name": "员山乡",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712227",
-    "name": "冬山乡",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712228",
-    "name": "五结乡",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712229",
-    "name": "三星乡",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712230",
-    "name": "大同乡",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712231",
-    "name": "南澳乡",
-    "parent_code": "712200"
-  },
-  {
-    "code": "712301",
-    "name": "桃园市",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712302",
-    "name": "中坜市",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712303",
-    "name": "平镇市",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712304",
-    "name": "八德市",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712305",
-    "name": "杨梅市",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712321",
-    "name": "大溪镇",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712323",
-    "name": "芦竹乡",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712324",
-    "name": "大园乡",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712325",
-    "name": "龟山乡",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712327",
-    "name": "龙潭乡",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712329",
-    "name": "新屋乡",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712330",
-    "name": "观音乡",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712331",
-    "name": "复兴乡",
-    "parent_code": "712300"
-  },
-  {
-    "code": "712401",
-    "name": "竹北市",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712421",
-    "name": "竹东镇",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712422",
-    "name": "新埔镇",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712423",
-    "name": "关西镇",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712424",
-    "name": "湖口乡",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712425",
-    "name": "新丰乡",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712426",
-    "name": "芎林乡",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712427",
-    "name": "橫山乡",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712428",
-    "name": "北埔乡",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712429",
-    "name": "宝山乡",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712430",
-    "name": "峨眉乡",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712431",
-    "name": "尖石乡",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712432",
-    "name": "五峰乡",
-    "parent_code": "712400"
-  },
-  {
-    "code": "712501",
-    "name": "苗栗市",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712521",
-    "name": "苑里镇",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712522",
-    "name": "通霄镇",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712523",
-    "name": "竹南镇",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712524",
-    "name": "头份镇",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712525",
-    "name": "后龙镇",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712526",
-    "name": "卓兰镇",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712527",
-    "name": "大湖乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712528",
-    "name": "公馆乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712529",
-    "name": "铜锣乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712530",
-    "name": "南庄乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712531",
-    "name": "头屋乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712532",
-    "name": "三义乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712533",
-    "name": "西湖乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712534",
-    "name": "造桥乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712535",
-    "name": "三湾乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712536",
-    "name": "狮潭乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712537",
-    "name": "泰安乡",
-    "parent_code": "712500"
-  },
-  {
-    "code": "712701",
-    "name": "彰化市",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712721",
-    "name": "鹿港镇",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712722",
-    "name": "和美镇",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712723",
-    "name": "线西乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712724",
-    "name": "伸港乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712725",
-    "name": "福兴乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712726",
-    "name": "秀水乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712727",
-    "name": "花坛乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712728",
-    "name": "芬园乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712729",
-    "name": "员林镇",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712730",
-    "name": "溪湖镇",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712731",
-    "name": "田中镇",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712732",
-    "name": "大村乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712733",
-    "name": "埔盐乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712734",
-    "name": "埔心乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712735",
-    "name": "永靖乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712736",
-    "name": "社头乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712737",
-    "name": "二水乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712738",
-    "name": "北斗镇",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712739",
-    "name": "二林镇",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712740",
-    "name": "田尾乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712741",
-    "name": "埤头乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712742",
-    "name": "芳苑乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712743",
-    "name": "大城乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712744",
-    "name": "竹塘乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712745",
-    "name": "溪州乡",
-    "parent_code": "712700"
-  },
-  {
-    "code": "712801",
-    "name": "南投市",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712821",
-    "name": "埔里镇",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712822",
-    "name": "草屯镇",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712823",
-    "name": "竹山镇",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712824",
-    "name": "集集镇",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712825",
-    "name": "名间乡",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712826",
-    "name": "鹿谷乡",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712827",
-    "name": "中寮乡",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712828",
-    "name": "鱼池乡",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712829",
-    "name": "国姓乡",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712830",
-    "name": "水里乡",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712831",
-    "name": "信义乡",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712832",
-    "name": "仁爱乡",
-    "parent_code": "712800"
-  },
-  {
-    "code": "712901",
-    "name": "斗六市",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712921",
-    "name": "斗南镇",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712922",
-    "name": "虎尾镇",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712923",
-    "name": "西螺镇",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712924",
-    "name": "土库镇",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712925",
-    "name": "北港镇",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712926",
-    "name": "古坑乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712927",
-    "name": "大埤乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712928",
-    "name": "莿桐乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712929",
-    "name": "林内乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712930",
-    "name": "二仑乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712931",
-    "name": "仑背乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712932",
-    "name": "麦寮乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712933",
-    "name": "东势乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712934",
-    "name": "褒忠乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712935",
-    "name": "台西乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712936",
-    "name": "元长乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712937",
-    "name": "四湖乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712938",
-    "name": "口湖乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "712939",
-    "name": "水林乡",
-    "parent_code": "712900"
-  },
-  {
-    "code": "713001",
-    "name": "太保市",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713002",
-    "name": "朴子市",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713023",
-    "name": "布袋镇",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713024",
-    "name": "大林镇",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713025",
-    "name": "民雄乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713026",
-    "name": "溪口乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713027",
-    "name": "新港乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713028",
-    "name": "六脚乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713029",
-    "name": "东石乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713030",
-    "name": "义竹乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713031",
-    "name": "鹿草乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713032",
-    "name": "水上乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713033",
-    "name": "中埔乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713034",
-    "name": "竹崎乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713035",
-    "name": "梅山乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713036",
-    "name": "番路乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713037",
-    "name": "大埔乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713038",
-    "name": "阿里山乡",
-    "parent_code": "713000"
-  },
-  {
-    "code": "713301",
-    "name": "屏东市",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713321",
-    "name": "潮州镇",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713322",
-    "name": "东港镇",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713323",
-    "name": "恒春镇",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713324",
-    "name": "万丹乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713325",
-    "name": "长治乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713326",
-    "name": "麟洛乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713327",
-    "name": "九如乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713328",
-    "name": "里港乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713329",
-    "name": "盐埔乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713330",
-    "name": "高树乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713331",
-    "name": "万峦乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713332",
-    "name": "内埔乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713333",
-    "name": "竹田乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713334",
-    "name": "新埤乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713335",
-    "name": "枋寮乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713336",
-    "name": "新园乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713337",
-    "name": "崁顶乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713338",
-    "name": "林边乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713339",
-    "name": "南州乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713340",
-    "name": "佳冬乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713341",
-    "name": "琉球乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713342",
-    "name": "车城乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713343",
-    "name": "满州乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713344",
-    "name": "枋山乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713345",
-    "name": "三地门乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713346",
-    "name": "雾台乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713347",
-    "name": "玛家乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713348",
-    "name": "泰武乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713349",
-    "name": "来义乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713350",
-    "name": "春日乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713351",
-    "name": "狮子乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713352",
-    "name": "牡丹乡",
-    "parent_code": "713300"
-  },
-  {
-    "code": "713401",
-    "name": "台东市",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713421",
-    "name": "成功镇",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713422",
-    "name": "关山镇",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713423",
-    "name": "卑南乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713424",
-    "name": "鹿野乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713425",
-    "name": "池上乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713426",
-    "name": "东河乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713427",
-    "name": "长滨乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713428",
-    "name": "太麻里乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713429",
-    "name": "大武乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713430",
-    "name": "绿岛乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713431",
-    "name": "海端乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713432",
-    "name": "延平乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713433",
-    "name": "金峰乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713434",
-    "name": "达仁乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713435",
-    "name": "兰屿乡",
-    "parent_code": "713400"
-  },
-  {
-    "code": "713501",
-    "name": "花莲市",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713521",
-    "name": "凤林镇",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713522",
-    "name": "玉里镇",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713523",
-    "name": "新城乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713524",
-    "name": "吉安乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713525",
-    "name": "寿丰乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713526",
-    "name": "光复乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713527",
-    "name": "丰滨乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713528",
-    "name": "瑞穗乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713529",
-    "name": "富里乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713530",
-    "name": "秀林乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713531",
-    "name": "万荣乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713532",
-    "name": "卓溪乡",
-    "parent_code": "713500"
-  },
-  {
-    "code": "713601",
-    "name": "马公市",
-    "parent_code": "713600"
-  },
-  {
-    "code": "713621",
-    "name": "湖西乡",
-    "parent_code": "713600"
-  },
-  {
-    "code": "713622",
-    "name": "白沙乡",
-    "parent_code": "713600"
-  },
-  {
-    "code": "713623",
-    "name": "西屿乡",
-    "parent_code": "713600"
-  },
-  {
-    "code": "713624",
-    "name": "望安乡",
-    "parent_code": "713600"
-  },
-  {
-    "code": "713625",
-    "name": "七美乡",
-    "parent_code": "713600"
-  },
-  {
-    "code": "810101",
-    "name": "中西区",
-    "parent_code": "810100"
-  },
-  {
-    "code": "810102",
-    "name": "湾仔区",
-    "parent_code": "810100"
-  },
-  {
-    "code": "810103",
-    "name": "东区",
-    "parent_code": "810100"
-  },
-  {
-    "code": "810104",
-    "name": "南区",
-    "parent_code": "810100"
-  },
-  {
-    "code": "810201",
-    "name": "油尖旺区",
-    "parent_code": "810200"
-  },
-  {
-    "code": "810202",
-    "name": "深水埗区",
-    "parent_code": "810200"
-  },
-  {
-    "code": "810203",
-    "name": "九龙城区",
-    "parent_code": "810200"
-  },
-  {
-    "code": "810204",
-    "name": "黄大仙区",
-    "parent_code": "810200"
-  },
-  {
-    "code": "810205",
-    "name": "观塘区",
-    "parent_code": "810200"
-  },
-  {
-    "code": "810301",
-    "name": "荃湾区",
-    "parent_code": "810300"
-  },
-  {
-    "code": "810302",
-    "name": "屯门区",
-    "parent_code": "810300"
-  },
-  {
-    "code": "810303",
-    "name": "元朗区",
-    "parent_code": "810300"
-  },
-  {
-    "code": "810304",
-    "name": "北区",
-    "parent_code": "810300"
-  },
-  {
-    "code": "810305",
-    "name": "大埔区",
-    "parent_code": "810300"
-  },
-  {
-    "code": "810306",
-    "name": "西贡区",
-    "parent_code": "810300"
-  },
-  {
-    "code": "810307",
-    "name": "沙田区",
-    "parent_code": "810300"
-  },
-  {
-    "code": "810308",
-    "name": "葵青区",
-    "parent_code": "810300"
-  },
-  {
-    "code": "810309",
-    "name": "离岛区",
-    "parent_code": "810300"
-  },
-  {
-    "code": "820101",
-    "name": "花地玛堂区",
-    "parent_code": "820100"
-  },
-  {
-    "code": "820102",
-    "name": "圣安多尼堂区",
-    "parent_code": "820100"
-  },
-  {
-    "code": "820103",
-    "name": "大堂区",
-    "parent_code": "820100"
-  },
-  {
-    "code": "820104",
-    "name": "望德堂区",
-    "parent_code": "820100"
-  },
-  {
-    "code": "820105",
-    "name": "风顺堂区",
-    "parent_code": "820100"
-  },
-  {
-    "code": "820201",
-    "name": "嘉模堂区",
-    "parent_code": "820200"
-  },
-  {
-    "code": "820301",
-    "name": "圣方济各堂区",
-    "parent_code": "820300"
   }
 ]
