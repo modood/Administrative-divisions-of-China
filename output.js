@@ -1,4 +1,3 @@
 'use strict'
 
-require('.').outputJSON()
-
+require('./index').outputJSON()
