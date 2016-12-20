@@ -3,12 +3,12 @@ module.exports = {
   extends: 'standard',
   globals: {
     'describe': true,
-    'context': true,
+    'it': true,
     'before': true,
     'beforeEach': true,
     'after': true,
     'afterEach': true,
-    'it': true,
+    'context': true,
     'expect': true
   }
 }
