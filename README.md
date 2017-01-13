@@ -27,6 +27,18 @@
 | “省份、城市、区县” 三级联动数据              | [address3.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/address3.json) |
 | “省份、城市、区县、乡镇” 四级联动数据        | [address4.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/address4.json) |
 
+## Usage
+
+抓取并导出最新数据
+
+```
+$ npm install
+
+$ node output.js
+```
+
+温馨提示： 由于抓取数据为异步操作，每次输出的数据顺序可能不同，但是不会影响数据完整性。
+
 ## TEST
 
 ```
@@ -45,47 +57,6 @@ $ npm test
     ✓ “某省、某市、某县、某镇” 不存在
 
   8 passing (12ms)
-```
-
-## NPM(不建议)
-
-> 注意：
-
-> 由于 `require` 为同步操作，出于性能考虑，不建议使用 Node 模块这种方式。
-
-> 原因参考 [Node.js Modules](https://nodejs.org/dist/latest-v4.x/docs/api/modules.html)。 因此建议 [下载 JSON 文件](https://github.com/modood/Administrative-divisions-of-China#json)。
-
-安装：
-
-```
-$ npm install --save china-division
-```
-
-使用：
-
-```js
-var chinaDivision = require('china-division');
-
-// 省份数据
-var provinces = chinaDivision.provinces;
-
-// 城市数据
-var cities = chinaDivision.cities;
-
-// 区县数据
-var areas = chinaDivision.areas;
-
-// 乡镇（街道）数据
-var streets = chinaDivision.streets;
-
-// “省、市” 二级联动数据
-var address2 = chinaDivision.address2;
-
-// “省、市、区” 三级联动数据
-var address3 = chinaDivision.address3;
-
-// “省、市、区、镇” 四级联动数据
-var address4 = chinaDivision.address4;
 ```
 
 ## Contributing
