@@ -37,6 +37,8 @@ $ npm install
 $ node output.js
 ```
 
+![preview](preview.png)
+
 >  提示：
 
 >  由于抓取乡镇数据为异步操作，每次输出的乡镇数据顺序可能不同
