@@ -69,9 +69,14 @@ function outputJSON () {
 function getAddressPC (provinces, cities) {
   var doc = {}
 
+  // 过滤三级联动时才有效的名称
+  var filterName = ['市辖区', '县', '省直辖县级行政区划', '自治区直辖县级行政区划'];
+
   provinces.forEach(function (p) {
     doc[p.name] = cities.filter(function (c) {
-      return p.code === c.parent_code
+      return p.code === c.parent_code && filterName.every(function(filterName) {
+        return c.name != filterName;
+      })
     }).map(function (c) {
       return c.name
     })
