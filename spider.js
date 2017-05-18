@@ -15,7 +15,7 @@ var i = 0
  */
 function fetch (callback) {
   // 数据截止2015年9月30日（发布时间：2016-08-09 11:28）
-  http.get('http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201608/t20160809_1386477.html', function (res) {
+  http.get('http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html', function (res) {
     var rawData = ''
     var statusCode = res.statusCode
 
@@ -64,7 +64,7 @@ function fetchStreets (area, total, callback) {
   }
 
   // 数据截止2015年9月30日（发布时间：2016-07-27）
-  http.get('http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/' + html, function (res) {
+  http.get('http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2016/' + html, function (res) {
     var bufferHelper = new BufferHelper()
     var statusCode = res.statusCode
 
