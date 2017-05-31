@@ -6,17 +6,17 @@
  * @DateTime 2016-10-10 11:24
  */
 
-const assert = require('assert')
+var assert = require('assert')
 
-const chinaDivision = require('..')
+var chinaDivision = require('..')
 
-const provinces = chinaDivision.provinces
-const cities = chinaDivision.cities
-const areas = chinaDivision.areas
-const streets = chinaDivision.streets
-const address2 = chinaDivision.address2
-const address3 = chinaDivision.address3
-const address4 = chinaDivision.address4
+var provinces = chinaDivision.provinces
+var cities = chinaDivision.cities
+var areas = chinaDivision.areas
+var streets = chinaDivision.streets
+var address2 = chinaDivision.address2
+var address3 = chinaDivision.address3
+var address4 = chinaDivision.address4
 
 describe('中华人民共和国行政区划：', function () {
   it('省份数据', function () {

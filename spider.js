@@ -14,8 +14,8 @@ var i = 0
  * @datetime 2016-12-19 16:32
  */
 function fetch (callback) {
-  // 数据截止2015年9月30日（发布时间：2016-08-09 11:28）
-  http.get('http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201608/t20160809_1386477.html', function (res) {
+    // 数据截止 2016 年 07 月 31 日（发布时间：2017-03-10 10:33）
+  http.get('http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html', function (res) {
     var rawData = ''
     var statusCode = res.statusCode
 
@@ -35,7 +35,7 @@ function fetch (callback) {
     res.on('end', function () {
       var current
       var result = {}
-      var reg = /<span lang="EN-US">(.*?)<span>&nbsp;&nbsp;&nbsp;&nbsp; <\/span><\/span><span style="font-family: 宋体">(.*?)<\/span>/g
+      var reg = /<span lang="EN-US">(.*?)<span>(?:&nbsp;)+ <\/span><\/span>(?:<\/b>)?(?:<b>)?<span style="font-family: 宋体">(.*?)<\/span>/g
 
       while ((current = reg.exec(rawData)) !== null) {
         result[current[1]] = current[2].trim()
@@ -63,8 +63,8 @@ function fetchStreets (area, total, callback) {
     default: html = areaCode.substr(0, 2) + '/' + areaCode.substr(2, 2) + '/' + areaCode + '.html'
   }
 
-  // 数据截止2015年9月30日（发布时间：2016-07-27）
-  http.get('http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/' + html, function (res) {
+  // 数据截止 2016 年 07 月 31 日（发布时间：2017-05-16）
+  http.get('http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2016/' + html, function (res) {
     var bufferHelper = new BufferHelper()
     var statusCode = res.statusCode
 
@@ -126,7 +126,7 @@ function pick (callback) {
           name: data[k],
           parent_code: k.substr(0, 2) + '0000'
         })
-      } else if (k.substr(4, 2) !== '00') {
+      } else if (k.substr(4, 2) !== '00' && data[k] !== '市辖区') {
         // 区县数据
         areas.push({
           code: k,
