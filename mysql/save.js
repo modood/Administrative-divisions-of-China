@@ -106,8 +106,10 @@ async function execute () {
   } catch (e) {
     console.log('导入数据失败：' + e.message)
     await connection.rollback()
+    await connection.destroy()
     process.exit(1)
   }
+  await connection.destroy()
   process.exit(0)
 }
 
