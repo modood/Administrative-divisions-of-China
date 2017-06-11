@@ -46,30 +46,27 @@ PRIMARY KEY(\`code\`), KEY(\`parent_code\`)
 
 // 省份数据添加
 var provDataInsertSql = `INSERT INTO \`${provTb}\` (\`code\`, \`name\`) VALUES `
-  // 城市数据添加
+// 城市数据添加
 var cityDataInsertSql = `INSERT INTO \`${cityTb}\` (\`code\`, \`name\`, \`parent_code\`) VALUES `
-  // 地区数据添加
+// 地区数据添加
 var areaDataInsertSql = `INSERT INTO \`${areaTb}\` (\`code\`, \`name\`, \`parent_code\`) VALUES `
-  // 省份数据删除
+// 省份数据删除
 var provDeleteSql = `DROP TABLE IF EXISTS ${provTb};`
-  // 城市数据删除
+// 城市数据删除
 var cityDeleteSql = `DROP TABLE IF EXISTS ${cityTb};`
-  // 地区数据删除
+// 地区数据删除
 var areaDeleteSql = `DROP TABLE IF EXISTS ${areaTb};`
-  // 省市区数据组装
+ // 省市区数据组装
 var values = []
-
 provArray.forEach(function (prov) {
   values.push(`(${prov['code']}, '${prov['name']}')`)
 })
-
 provDataInsertSql += values.join(',') + ';'
 
 values = []
 cityArray.forEach(function (city) {
   values.push(`(${city['code']}, '${city['name']}', '${city['parent_code']}')`)
 })
-
 cityDataInsertSql += values.join(',') + ';'
 
 values = []
@@ -108,7 +105,7 @@ async function execute () {
     console.info('导入数据完毕')
   } catch (e) {
     console.log('导入数据失败：' + e.message)
-    await connection.rollBack()
+    await connection.rollback()
     process.exit(1)
   }
   process.exit(0)
