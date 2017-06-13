@@ -41,7 +41,7 @@ const tableCreateSql3 = `
 CREATE TABLE IF NOT EXISTS \`${areaTb}\` (
 \`code\` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
 \`name\` varchar(32) NOT NULL,
-\`parent_code\` int(15) UNSIGNED NOT NULL,
+\`parent_code\` int(11) UNSIGNED NOT NULL,
 PRIMARY KEY(\`code\`), KEY(\`parent_code\`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COMMENT='地区表';
 `
