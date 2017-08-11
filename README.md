@@ -34,15 +34,15 @@
 ```
 $ npm install
 
-$ node output.js
+$ npm run build
 ```
 
 ![preview](preview.png)
 
 >  提示：
-
+>
 >  由于抓取乡镇数据为异步操作，每次输出的乡镇数据顺序可能不同
-
+>
 >  但是不会影响其它数据的顺序以及所有数据的完整性。
 
 ## TEST

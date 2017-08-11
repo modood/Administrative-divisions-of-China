@@ -6,7 +6,8 @@ var async = require('async')
 var iconv = require('iconv-lite')
 var BufferHelper = require('bufferhelper')
 
-var i = 0
+var al = 0
+var ai = 0
 
 /**
  * 从国家统计局（http://www.stats.gov.cn/）抓取县级以及县级以上行政区划数据
@@ -14,7 +15,7 @@ var i = 0
  * @datetime 2016-12-19 16:32
  */
 function fetch (callback) {
-    // 数据截止 2016 年 07 月 31 日（发布时间：2017-03-10 10:33）
+  // 数据截止 2016 年 07 月 31 日（发布时间：2017-03-10 10:33）
   http.get('http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html', function (res) {
     var rawData = ''
     var statusCode = res.statusCode
@@ -42,8 +43,7 @@ function fetch (callback) {
       }
       return callback(null, result)
     })
-  })
-  .on('error', callback)
+  }).on('error', callback)
 }
 
 /**
@@ -51,15 +51,16 @@ function fetch (callback) {
  * @author modood <https://github.com/modood>
  * @datetime 2016-12-19 16:35
  */
-function fetchStreets (area, total, callback) {
+function fetchStreets (area, callback) {
   var html = ''
   var areaCode = area.code
   var areaName = area.name
 
-  // 两个特殊城市单独处理（中山市和东莞市没有县级行政区划）
+  // 特殊城市单独处理（中山市、东莞市、儋州市没有县级行政区划）
   switch (areaCode) {
     case '441900': html = '44/4419.html'; break
     case '442000': html = '44/4420.html'; break
+    case '460400': html = '46/4604.html'; break
     default: html = areaCode.substr(0, 2) + '/' + areaCode.substr(2, 2) + '/' + areaCode + '.html'
   }
 
@@ -68,11 +69,25 @@ function fetchStreets (area, total, callback) {
     var bufferHelper = new BufferHelper()
     var statusCode = res.statusCode
 
-    if (['441900', '442000'].indexOf(areaCode) === -1) {
-      console.log('[' + ++i + '/' + total + '] 正在抓取乡镇数据，当前区县：', areaCode, areaName)
+    if (statusCode !== 200 && statusCode !== 404) {
+      res.resume()
+      return fetchStreets(area, callback)
     }
 
-    if (statusCode !== 200) {
+    // 特殊城市或区县抓取乡镇数据不打印输出
+    if ([
+      '441900', // 东莞市
+      '442000', // 中山市
+      '460400', // 儋州市
+      '460321', // 三沙市-西沙群岛
+      '460322', // 三沙市-南沙群岛
+      '460323', // 三沙市-中沙群岛的岛礁及其海域
+      '620201' // 嘉峪关市
+    ].indexOf(areaCode) === -1) {
+      console.log('[' + ++ai + '/' + al + '] 正在抓取乡镇数据，当前区县：', areaCode, areaName)
+    }
+
+    if (statusCode === 404) {
       res.resume()
       return callback(null, {})
     }
@@ -85,17 +100,16 @@ function fetchStreets (area, total, callback) {
       var rawData = iconv.decode(bufferHelper.toBuffer(), 'GBK')
       var current
       var result = {}
-      var reg = /<tr class='towntr'><td><a href=.*?>(.*?)<\/a><\/td><td><a href=.*?>(.*?)<\/a><\/td><\/tr>/g
+      var reg = /<tr class='.*?'><td><a href=.*?>(.*?)<\/a><\/td><td><a href=.*?>(.*?)<\/a><\/td><\/tr>/g
 
       while ((current = reg.exec(rawData)) !== null) {
         result[current[1]] = current[2].trim()
       }
       return callback(null, result)
     })
-  })
-  .on('error', function () {
+  }).on('error', function () {
     console.log('连接超时，马上重试...')
-    fetchStreets(area, total, callback)
+    fetchStreets(area, callback)
   })
 }
 
@@ -153,7 +167,8 @@ function pickStreets (areas, callback) {
   var streets = []
 
   async.mapLimit(areas, 10, function (item, cb) {
-    fetchStreets(item, areas.length, function (err, data) {
+    al = areas.length
+    fetchStreets(item, function (err, data) {
       if (err) return cb(err)
 
       for (var k in data) {
@@ -173,27 +188,30 @@ function pickStreets (areas, callback) {
 }
 
 /**
- * 两个特殊城市单独处理（中山市和东莞市没有县级行政区划）
+ * 特殊城市单独处理
  * @author modood <https://github.com/modood>
  * @datetime 2016-12-20 15:11
  */
 function handleSpecialCities (callback) {
+  // 1. 中山市、东莞市、儋州市没有县级行政区划
+  // 2. 嘉峪关市下有一个县级行政区划叫市辖区（code: 620201），
+  //    因此也视为没有县级行政区划，但是 code 需要保留处理。
+  // 3. 三沙市下有县级行政区划，但是在 “最新县及县以上行政区划代码” 中
+  //    没有，因此需要手动加上。
+  // 4. 福建省泉州市金门县没有乡镇级行政区划
   var areas = [
-    {
-      code: '442000',
-      name: '中山市',
-      parent_code: '442000'
-    },
-    {
-      code: '441900',
-      name: '东莞市',
-      parent_code: '441900'
-    }
+    { code: '442000', name: '中山市', parent_code: '442000' },
+    { code: '441900', name: '东莞市', parent_code: '441900' },
+    { code: '460400', name: '儋州市', parent_code: '460400' },
+    { code: '620201', name: '嘉峪关市', parent_code: '620200' },
+    { code: '460321', name: '西沙群岛', parent_code: '460300' },
+    { code: '460322', name: '南沙群岛', parent_code: '460300' },
+    { code: '460323', name: '中沙群岛的岛礁及其海域', parent_code: '460300' }
   ]
   var streets = []
 
   async.each(areas, function (area, cb) {
-    fetchStreets(area, areas.length, function (err, data) {
+    fetchStreets(area, function (err, data) {
       if (err) return cb(err)
 
       for (var k in data) {

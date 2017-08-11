@@ -38,7 +38,7 @@ function outputJSON () {
     console.log('[1/3] 正在生成 “省份、城市” 二级联动数据...')
     var pc = getAddressPC(provinces, cities)
     console.log('[2/3] 正在生成 “省份、城市、区县” 三级联动数据...')
-    var pca = getAddressPCA(provinces, cities, areas)
+    var pca = getAddressPCA(provinces, cities, areas, streets)
     console.log('[3/3] 正在生成 “省份、城市、区县、乡镇” 四级联动数据...')
     var pcas = getAddressPCAS(provinces, cities, areas, streets)
 
@@ -90,7 +90,7 @@ function getAddressPC (provinces, cities) {
  * @Author   https://github.com/modood
  * @DateTime 2016-10-09 16:00
  */
-function getAddressPCA (provinces, cities, areas) {
+function getAddressPCA (provinces, cities, areas, streets) {
   var doc = {}
 
   provinces.forEach(function (p) {
@@ -99,6 +99,15 @@ function getAddressPCA (provinces, cities, areas) {
     cities.filter(function (c) {
       return p.code === c.parent_code
     }).forEach(function (c) {
+      // 特殊城市单独处理（中山市、东莞市、儋州市和嘉峪关市没有县级行政区划）
+      if (['441900', '442000', '460400', '620200'].indexOf(c.code) !== -1) {
+        doc[p.name][c.name] = streets.filter(function (s) {
+          return (c.code === '620200' ? '620201' : c.code) === s.parent_code
+        }).map(function (s) {
+          return s.name
+        })
+        return
+      }
       doc[p.name][c.name] = areas.filter(function (a) {
         return c.code === a.parent_code
       }).map(function (a) {
@@ -137,6 +146,8 @@ function getAddressPCAS (provinces, cities, areas, streets) {
       })
     })
   })
+  // 特殊区县单独处理（福建省泉州市金门县没有乡镇级行政区划）
+  doc['福建省']['泉州市']['金门县'].push('金门县')
 
   return doc
 }

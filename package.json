@@ -1,10 +1,11 @@
 {
   "name": "china-division",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "中华人民共和国行政区划：省份、城市、区县、乡镇（街道）",
   "main": "index.js",
   "scripts": {
     "test": "eslint . && mocha -t 5000",
+    "build": "node output.js",
     "precommit": "npm test"
   },
   "repository": {
@@ -34,10 +35,10 @@
     "iconv-lite": "^0.4.15"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.4.1",
     "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.13.4",
