@@ -28,3 +28,4 @@ build/Release
 node_modules
 config/index.js
 .DS_Store
+package-lock.json

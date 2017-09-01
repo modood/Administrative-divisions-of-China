@@ -45,6 +45,12 @@ $ npm run build
 >
 >  但是不会影响其它数据的顺序以及所有数据的完整性。
 
+数据入库
+
+```
+ $ node mysql/save.js
+```
+
 ## TEST
 
 ```
