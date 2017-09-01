@@ -73,6 +73,7 @@ describe('中华人民共和国行政区划：', function () {
 
   it('“省份、城市、区县、乡镇” 四级联动数据', function () {
     assert.ok(address4['广西壮族自治区']['玉林市']['容县'].indexOf('石头镇') !== -1)
+    assert.ok(address4['陕西省']['汉中市']['汉台区'].indexOf('七里街道') !== -1)
     assert.ok(address4['海南省']['三沙市']['南沙群岛'].indexOf('永暑岛') !== -1)
 
     assert.ok(address4['广东省']['中山市']['中山市'].indexOf('横栏镇') !== -1)

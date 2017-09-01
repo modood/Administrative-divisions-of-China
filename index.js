@@ -141,7 +141,7 @@ function getAddressPCAS (provinces, cities, areas, streets) {
         doc[p.name][c.name][a.name] = streets.filter(function (s) {
           return a.code === s.parent_code
         }).map(function (s) {
-          return s.name
+          return s.name.replace('办事处', '')
         })
       })
     })
