@@ -1,11 +1,11 @@
 {
   "name": "china-division",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "中华人民共和国行政区划：省份、城市、区县、乡镇（街道）",
-  "main": "index.js",
+  "main": "scripts/exp.js",
   "scripts": {
     "test": "eslint . && mocha -t 5000",
-    "build": "node output.js",
+    "build": "node scripts/get.js && node scripts/fmt.js && npm test",
     "precommit": "npm test"
   },
   "repository": {
@@ -29,12 +29,10 @@
     "email": "modood@qq.com",
     "url": "https://github.com/modood"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "async": "^2.1.4",
     "bufferhelper": "^0.2.1",
-    "iconv-lite": "^0.4.15"
-  },
-  "devDependencies": {
     "eslint": "^4.4.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
@@ -42,6 +40,8 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.13.4",
+    "iconv-lite": "^0.4.15",
+    "lodash": "^4.17.4",
     "mocha": "^3.1.0"
   },
   "license": "MIT",

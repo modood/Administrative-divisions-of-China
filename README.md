@@ -19,13 +19,16 @@
 
 | 文件列表                                     | 下载地址       |
 |:---------------------------------------------|:---------------|
-| 省份数据                                     | [provinces.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/provinces.json) |
-| 城市数据                                     | [cities.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/cities.json) |
-| 区县数据                                     | [areas.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/areas.json) |
-| 乡镇（街道）数据                             | [streets.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/streets.json) |
-| “省份、城市” 二级联动数据                    | [address2.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/address2.json) |
-| “省份、城市、区县” 三级联动数据              | [address3.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/address3.json) |
-| “省份、城市、区县、乡镇” 四级联动数据        | [address4.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/address4.json) |
+| 省份数据                                        | [provinces.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/provinces.json) |
+| 城市数据                                        | [cities.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/cities.json) |
+| 区县数据                                        | [areas.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/areas.json) |
+| 乡镇（街道）数据                                | [streets.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/streets.json) |
+| “省份、城市” 二级联动数据                       | [pc.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/pc.json) |
+| “省份、城市” 二级联动数据（带编码）             | [pc-code.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/pc-code.json) |
+| “省份、城市、区县” 三级联动数据                 | [pca.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/pca.json) |
+| “省份、城市、区县” 三级联动数据（带编码）       | [pca-code.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/pca-code.json) |
+| “省份、城市、区县、乡镇” 四级联动数据           | [pcas.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/pcas.json) |
+| “省份、城市、区县、乡镇” 四级联动数据（带编码） | [pcas-code.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/pcas-code.json) |
 
 ## Usage
 
@@ -36,8 +39,37 @@ $ npm install
 
 $ npm run build
 ```
-
-![preview](preview.png)
+```
+[1/1] 正在抓取省份、城市和区县数据...
+[1/2848] 正在抓取乡镇数据，当前区县： 110105 朝阳区
+[2/2848] 正在抓取乡镇数据，当前区县： 110101 东城区
+[3/2848] 正在抓取乡镇数据，当前区县： 110106 丰台区
+[4/2848] 正在抓取乡镇数据，当前区县： 110109 门头沟区
+[5/2848] 正在抓取乡镇数据，当前区县： 110112 通州区
+[6/2848] 正在抓取乡镇数据，当前区县： 110102 西城区
+[7/2848] 正在抓取乡镇数据，当前区县： 110107 石景山区
+[8/2848] 正在抓取乡镇数据，当前区县： 110111 房山区
+[9/2848] 正在抓取乡镇数据，当前区县： 110108 海淀区
+[10/2848] 正在抓取乡镇数据，当前区县： 110113 顺义区
+...
+[2841/2848] 正在抓取乡镇数据，当前区县： 659006 铁门关市
+[2842/2848] 正在抓取乡镇数据，当前区县： 210522 桓仁满族自治县
+[2843/2848] 正在抓取乡镇数据，当前区县： 210881 盖州市
+[2844/2848] 正在抓取乡镇数据，当前区县： 130902 新华区
+[2845/2848] 正在抓取乡镇数据，当前区县： 150782 牙克石市
+[2846/2848] 正在抓取乡镇数据，当前区县： 542421 那曲县
+[2847/2848] 正在抓取乡镇数据，当前区县： 610122 蓝田县
+[2848/2848] 正在抓取乡镇数据，当前区县： 610322 凤翔县
+[1/5] 正在导出 “省份” JSON 数据...
+[2/5] 正在导出 “城市” JSON 数据...
+[3/5] 正在导出 “区县” JSON 数据...
+[4/5] 正在导出 “乡镇” JSON 数据...
+[5/5] 数据抓取完成！
+[1/4] 正在导出 “省份、城市” 二级联动数据...
+[2/4] 正在导出 “省份、城市、区县” 三级联动数据...
+[3/4] 正在导出 “省份、城市、区县、乡镇” 四级联动数据...该步骤操作数据较多，比较耗时，请耐心等候...
+[4/4] 数据更新完成！
+```
 
 >  提示：
 >
@@ -45,12 +77,12 @@ $ npm run build
 >
 >  但是不会影响其它数据的顺序以及所有数据的完整性。
 
-## TEST
+## Testing
 
 ```
 $ npm test
 
-> mocha -t 5000
+> eslint . && mocha -t 5000
 
   中华人民共和国行政区划：
     ✓ 省份数据
@@ -75,5 +107,4 @@ $ npm test
 
 ## License
 
-this repo is released under the [MIT License](http://www.opensource.org/licenses/MIT).
-
+this repo is released under the [WTFPL](http://www.wtfpl.net/) – Do What the Fuck You Want to Public License.
