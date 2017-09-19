@@ -30,6 +30,8 @@
 | “省份、城市、区县、乡镇” 四级联动数据           | [pcas.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/pcas.json) |
 | “省份、城市、区县、乡镇” 四级联动数据（带编码） | [pcas-code.json](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/pcas-code.json) |
 
+> 提示：需要打包下载全部文件，请看 [Releases](https://github.com/modood/Administrative-divisions-of-China/releases)。
+
 ## Usage
 
 抓取并导出最新数据
