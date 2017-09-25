@@ -22,27 +22,27 @@ const pcasC = chinaDivision.pcasC
 
 describe('中华人民共和国行政区划：', () => {
   it('省份数据', () => {
-    const i = findElem(provinces, 'code', '110000')
+    const i = findElem(provinces, 'code', '11')
     assert(i !== -1)
     assert.equal(provinces[i].name, '北京市')
   })
 
   it('城市数据', () => {
-    const i = findElem(cities, 'code', '140100')
+    const i = findElem(cities, 'code', '1401')
     assert(i !== -1)
     assert.equal(cities[i].name, '太原市')
-    assert.equal(cities[i].parent_code, '140000')
+    assert.equal(cities[i].parent_code, '14')
   })
 
   it('区县数据', () => {
     const i = findElem(areas, 'code', '120110')
     assert(i !== -1)
     assert.equal(areas[i].name, '东丽区')
-    assert.equal(areas[i].parent_code, '120100')
+    assert.equal(areas[i].parent_code, '1201')
   })
 
   it('乡镇数据', () => {
-    const i = findElem(streets, 'code', '441881124000')
+    const i = findElem(streets, 'code', '441881124')
     assert(i !== -1)
     assert.equal(streets[i].name, '波罗镇')
     assert.equal(streets[i].parent_code, '441881')
@@ -58,8 +58,8 @@ describe('中华人民共和国行政区划：', () => {
 
     let ok = false
     const t = [
-      { code: '130000', name: '河北省' },
-      { code: '130300', name: '秦皇岛市' }
+      { code: '13', name: '河北省' },
+      { code: '1303', name: '秦皇岛市' }
     ]
     loop:
     for (let i = 0; i < pcC.length; i++) {
@@ -97,8 +97,8 @@ describe('中华人民共和国行政区划：', () => {
 
     let ok = false
     const t = [
-      { code: '140000', name: '山西省' },
-      { code: '140500', name: '晋城市' },
+      { code: '14', name: '山西省' },
+      { code: '1405', name: '晋城市' },
       { code: '140524', name: '陵川县' }
     ]
     loop:
@@ -145,10 +145,10 @@ describe('中华人民共和国行政区划：', () => {
 
     let ok = false
     const t = [
-      { code: '210000', name: '辽宁省' },
-      { code: '210200', name: '大连市' },
+      { code: '21', name: '辽宁省' },
+      { code: '2102', name: '大连市' },
       { code: '210211', name: '甘井子区' },
-      { code: '210211007000', name: '泡崖街道' }
+      { code: '210211007', name: '泡崖街道' }
     ]
 
     loop:

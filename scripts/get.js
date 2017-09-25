@@ -143,22 +143,22 @@ function pick (callback) {
       if (k.substr(2, 4) === '0000') {
         // 省份数据
         provinces.push({
-          code: k,
+          code: k.substr(0, 2),
           name: data[k]
         })
       } else if (k.substr(4, 2) === '00' && k.substr(2, 4) !== '0000') {
         // 城市数据
         cities.push({
-          code: k,
+          code: k.substr(0, 4),
           name: data[k],
-          parent_code: k.substr(0, 2) + '0000'
+          parent_code: k.substr(0, 2)
         })
       } else if (k.substr(4, 2) !== '00' && data[k] !== '市辖区') {
         // 区县数据
         areas.push({
           code: k,
           name: data[k],
-          parent_code: k.substr(0, 4) + '00'
+          parent_code: k.substr(0, 4)
         })
       }
     }
@@ -187,7 +187,7 @@ function pickStreets (areas, callback) {
       for (const k in data) {
         // 乡镇数据
         streets.push({
-          code: k,
+          code: k.substr(0, 9),
           name: data[k],
           parent_code: k.substr(0, 6)
         })
@@ -213,13 +213,13 @@ function handleSpecialCities (callback) {
   //    没有，因此需要手动加上。
   // 4. 福建省泉州市金门县没有乡镇级行政区划
   const areas = [
-    { code: '442000', name: '中山市', parent_code: '442000' },
-    { code: '441900', name: '东莞市', parent_code: '441900' },
-    { code: '460400', name: '儋州市', parent_code: '460400' },
-    { code: '620201', name: '嘉峪关市', parent_code: '620200' },
-    { code: '460321', name: '西沙群岛', parent_code: '460300' },
-    { code: '460322', name: '南沙群岛', parent_code: '460300' },
-    { code: '460323', name: '中沙群岛的岛礁及其海域', parent_code: '460300' }
+    { code: '442000', name: '中山市', parent_code: '4420' },
+    { code: '441900', name: '东莞市', parent_code: '4419' },
+    { code: '460400', name: '儋州市', parent_code: '4604' },
+    { code: '620201', name: '嘉峪关市', parent_code: '6202' },
+    { code: '460321', name: '西沙群岛', parent_code: '4603' },
+    { code: '460322', name: '南沙群岛', parent_code: '4603' },
+    { code: '460323', name: '中沙群岛的岛礁及其海域', parent_code: '4603' }
   ]
   const streets = []
 

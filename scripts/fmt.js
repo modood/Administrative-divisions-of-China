@@ -67,7 +67,7 @@ function getAddressPCA (provinces, cities, areas, streets) {
   // 特殊城市处理，中山市、东莞市、儋州市和嘉峪关市没有第三级（区县），
   // 嘉峪关市有第三级，但是有且只有一个（市辖区：620201），
   // 出于实用性考虑，使用第四级（乡镇街道）补进
-  const f = ['441900', '442000', '460400', '620200']
+  const f = ['4419', '4420', '4604', '6202']
 
   _.forEach(rC, p => {
     r[p.name] = {}
@@ -76,12 +76,18 @@ function getAddressPCA (provinces, cities, areas, streets) {
       c => delete c.parent_code && c
     )
     _.forEach(p.childs, c => {
-      const it = _.includes(f, c.code) ? _.cloneDeep(streets) : _.cloneDeep(areas)
+      let it
+      if (_.includes(f, c.code)) {
+        // 嘉峪关市比较特殊，二级（嘉峪关市：6202）三级只有一个（市辖区：620201），
+        // 因此用第四级数据补进第三级的话，需要处理一下
+        c.code = c.code === '6202' ? '620201' : `${c.code}00`
+        it = _.cloneDeep(streets)
+      } else {
+        it = _.cloneDeep(areas)
+      }
 
       c.childs = _.map(
-        // 嘉峪关市比较特殊，二级（嘉峪关市：620200）三级只有一个（市辖区：620201），
-        // 因此用第四级数据补进第三级的话，需要处理一下
-        _.filter(it, i => (c.code === '620200' ? '620201' : c.code) === i.parent_code),
+        _.filter(it, i => c.code === i.parent_code),
         i => delete i.parent_code && i
       )
       r[p.name][c.name] = _.map(c.childs, i => i.name)
@@ -116,7 +122,7 @@ function getAddressPCAS (provinces, cities, areas, streets) {
         // 特殊区县单独处理，福建省泉州市金门县没有第四级（乡镇），
         // 出于实用性考虑，使用一个第三级（区县）替代
         if (a.code === '350527') {
-          a.childs = [{ name: '金门县', code: '350527000000' }]
+          a.childs = [{ name: '金门县', code: '350527000' }]
           r[p.name][c.name][a.name] = ['金门县']
           return
         }
