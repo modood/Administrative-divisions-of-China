@@ -229,7 +229,7 @@ function handleSpecialCities (callback) {
 
       for (const k in data) {
         streets.push({
-          code: k,
+          code: k.substr(0, 9),
           name: data[k],
           parent_code: k.substr(0, 6)
         })
