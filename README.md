@@ -101,6 +101,10 @@ $ npm test
   8 passing (12ms)
 ```
 
+## Stargazers over time
+
+[![Stargazers over time](https://starcharts.herokuapp.com/modood/Administrative-divisions-of-China.svg)](https://starcharts.herokuapp.com/modood/Administrative-divisions-of-China)
+
 ## Contributing
 
 1. Fork it
