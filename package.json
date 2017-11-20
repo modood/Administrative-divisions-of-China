@@ -1,6 +1,6 @@
 {
   "name": "china-division",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "中华人民共和国行政区划：省份、城市、区县、乡镇（街道）",
   "main": "scripts/exp.js",
   "scripts": {
