@@ -11,7 +11,7 @@ const streets = require(path.resolve(__dirname, '../dist/streets.json'))
 
 ;(function () {
   console.log('[1/4] 正在导出 “省份、城市” 二级联动数据...')
-  const [pc, pcC] = getAddressPC(provinces, cities)
+  const [pc, pcC] = getAddressPC(provinces, cities, areas)
   out('pc', pc)
   out('pc-code', pcC)
 
@@ -33,7 +33,7 @@ const streets = require(path.resolve(__dirname, '../dist/streets.json'))
  * @Author   https://github.com/modood
  * @DateTime 2017-09-18 15:14
  */
-function getAddressPC (provinces, cities) {
+function getAddressPC (provinces, cities, areas) {
   const r = {}
   const rC = _.cloneDeep(provinces)
 
@@ -41,10 +41,19 @@ function getAddressPC (provinces, cities) {
   const f = ['县', '省直辖县级行政区划', '自治区直辖县级行政区划']
 
   _.forEach(rC, p => {
+    let ac = []
     p.childs = _.map(
-      _.filter(_.cloneDeep(cities), c => p.code === c.parent_code && _.every(f, n => c.name !== n)),
+      _.filter(_.cloneDeep(cities), c => {
+        // 出于实用性考虑，将省或自治区直辖区县数据视为第二级（城市）数据
+        if (p.code === c.parent_code && ['省直辖县级行政区划', '自治区直辖县级行政区划'].includes(c.name)) {
+          ac = _.map(_.filter(_.cloneDeep(areas), a => c.code === a.parent_code), a => delete a.parent_code && a)
+        }
+        return p.code === c.parent_code && _.every(f, n => c.name !== n)
+      }),
       c => delete c.parent_code && c
     )
+
+    p.childs.push(...ac)
 
     // 四个直辖市（北京、天津、上海、重庆）仅有一个二级（城市）名为市辖区，
     // 出于实用性考虑，将二级（城市）重命名为第一级（省份）名称

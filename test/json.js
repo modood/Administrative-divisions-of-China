@@ -50,6 +50,9 @@ describe('中华人民共和国行政区划：', () => {
 
   it('“省份、城市” 二级联动数据', () => {
     assert.ok(pc['浙江省'].indexOf('杭州市') !== -1)
+    assert.ok(pc['河南省'].indexOf('济源市') !== -1)
+    assert.ok(pc['湖北省'].indexOf('仙桃市') !== -1)
+    assert.ok(pc['新疆维吾尔自治区'].indexOf('铁门关市') !== -1)
 
     for (const p in pc) {
       if (['台湾省', '香港特别行政区', '澳门特别行政区'].indexOf(p) === -1 &&
@@ -58,8 +61,8 @@ describe('中华人民共和国行政区划：', () => {
 
     let ok = false
     const t = [
-      { code: '13', name: '河北省' },
-      { code: '1303', name: '秦皇岛市' }
+      { code: '41', name: '河南省' },
+      { code: '419001', name: '济源市' }
     ]
     loop:
     for (let i = 0; i < pcC.length; i++) {
