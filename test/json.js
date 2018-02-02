@@ -5,20 +5,19 @@
  */
 /* eslint no-labels: ["error", { "allowLoop": true }] */
 
+var path = require('path')
 const assert = require('assert')
 
-const chinaDivision = require('..')
-
-const provinces = chinaDivision.provinces
-const cities = chinaDivision.cities
-const areas = chinaDivision.areas
-const streets = chinaDivision.streets
-const pc = chinaDivision.pc
-const pcC = chinaDivision.pcC
-const pca = chinaDivision.pca
-const pcaC = chinaDivision.pcaC
-const pcas = chinaDivision.pcas
-const pcasC = chinaDivision.pcasC
+const provinces = require(path.resolve(__dirname, '../dist/provinces.json'))
+const cities = require(path.resolve(__dirname, '../dist/cities.json'))
+const areas = require(path.resolve(__dirname, '../dist/areas.json'))
+const streets = require(path.resolve(__dirname, '../dist/streets.json'))
+const pc = require(path.resolve(__dirname, '../dist/pc.json'))
+const pcC = require(path.resolve(__dirname, '../dist/pc-code.json'))
+const pca = require(path.resolve(__dirname, '../dist/pca.json'))
+const pcaC = require(path.resolve(__dirname, '../dist/pca-code.json'))
+const pcas = require(path.resolve(__dirname, '../dist/pcas.json'))
+const pcasC = require(path.resolve(__dirname, '../dist/pcas-code.json'))
 
 describe('中华人民共和国行政区划：', () => {
   it('省份数据', () => {
