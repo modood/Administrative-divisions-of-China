@@ -68,11 +68,11 @@ describe('中华人民共和国行政区划：', () => {
     for (let i = 0; i < pcC.length; i++) {
       const p = pcC[i]
       if (['台湾省', '香港特别行政区', '澳门特别行政区'].indexOf(p.name) === -1 &&
-        p.childs.length === 0) throw new Error(`数据：pc-code.json，${p.name}的城市列表为空！`)
+        p.children.length === 0) throw new Error(`数据：pc-code.json，${p.name}的城市列表为空！`)
 
       if (p.code === t[0].code && p.name === t[0].name) {
-        for (let j = 0; j < p.childs.length; j++) {
-          const c = p.childs[j]
+        for (let j = 0; j < p.children.length; j++) {
+          const c = p.children[j]
           if (c.code === t[1].code && c.name === t[1].name) {
             ok = true
             break loop
@@ -109,12 +109,12 @@ describe('中华人民共和国行政区划：', () => {
       const p = pcaC[i]
 
       if (p.code === t[0].code && p.name === t[0].name) {
-        for (let j = 0; j < p.childs.length; j++) {
-          const c = p.childs[j]
-          if (c.childs.length === 0) throw new Error(`数据：pca-code.json，${p.name}${c.name}的区县列表为空！`)
+        for (let j = 0; j < p.children.length; j++) {
+          const c = p.children[j]
+          if (c.children.length === 0) throw new Error(`数据：pca-code.json，${p.name}${c.name}的区县列表为空！`)
           if (c.code === t[1].code && c.name === t[1].name) {
-            for (let k = 0; k < c.childs.length; k++) {
-              const a = c.childs[k]
+            for (let k = 0; k < c.children.length; k++) {
+              const a = c.children[k]
               if (a.code === t[2].code && a.name === t[2].name) {
                 ok = true
                 break loop
@@ -159,15 +159,15 @@ describe('中华人民共和国行政区划：', () => {
       const p = pcasC[i]
 
       if (p.code === t[0].code && p.name === t[0].name) {
-        for (let j = 0; j < p.childs.length; j++) {
-          const c = p.childs[j]
+        for (let j = 0; j < p.children.length; j++) {
+          const c = p.children[j]
           if (c.code === t[1].code && c.name === t[1].name) {
-            for (let k = 0; k < c.childs.length; k++) {
-              const a = c.childs[k]
-              if (a.childs.length === 0) throw new Error(`数据：pcas-code.json，${p.name}${c.name}${a.name}的乡镇列表为空！`)
+            for (let k = 0; k < c.children.length; k++) {
+              const a = c.children[k]
+              if (a.children.length === 0) throw new Error(`数据：pcas-code.json，${p.name}${c.name}${a.name}的乡镇列表为空！`)
               if (a.code === t[2].code && a.name === t[2].name) {
-                for (let l = 0; l < a.childs.length; l++) {
-                  const s = a.childs[l]
+                for (let l = 0; l < a.children.length; l++) {
+                  const s = a.children[l]
                   if (s.code === t[3].code && s.name === t[3].name) {
                     ok = true
                     break loop
