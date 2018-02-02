@@ -1,11 +1,11 @@
 {
   "name": "china-division",
-  "version": "1.3.2",
+  "version": "2.0.0",
   "description": "中华人民共和国行政区划：省份、城市、区县、乡镇（街道）",
-  "main": "scripts/exp.js",
+  "main": "lib/crawler.js",
   "scripts": {
     "test": "eslint . && mocha -t 5000",
-    "build": "node scripts/get.js && node scripts/fmt.js && npm test",
+    "build": "node lib/fetch.js && node lib/main.js && npm test",
     "precommit": "npm test"
   },
   "repository": {
@@ -31,7 +31,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "async": "^2.1.4",
     "bufferhelper": "^0.2.1",
     "eslint": "^4.4.1",
     "eslint-config-standard": "^10.2.1",
@@ -42,7 +41,10 @@
     "husky": "^0.13.4",
     "iconv-lite": "^0.4.15",
     "lodash": "^4.17.4",
-    "mocha": "^3.1.0"
+    "mocha": "^3.1.0",
+    "sequelize": "^4.32.2",
+    "sequelize-cursor-pagination": "^1.0.3",
+    "sqlite3": "^3.1.13"
   },
   "license": "MIT",
   "bugs": {
