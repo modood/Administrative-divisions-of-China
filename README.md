@@ -112,35 +112,14 @@ $ npm test
 
 可以自己将数据迁移到其他数据库管理系统中（MySQL, Oracle, MSSQL 等）。
 
-**省级数据模型**
-
-```sql
-CREATE TABLE IF NOT EXISTS `province` (
-  `code` VARCHAR(255) PRIMARY KEY,
-  `name` VARCHAR(255)
-);
-```
-
-数据预览：
+**省级数据预览**
 
 | code | name   |
 |:-----|:-------|
 | 11   | 北京市 |
 | 12   | 天津市 |
 
-**地级数据模型**
-
-```sql
-CREATE TABLE IF NOT EXISTS `city` (
-  `code` VARCHAR(255) PRIMARY KEY,
-  `name` VARCHAR(255),
-  `provinceCode` VARCHAR(255)
-    REFERENCES `province` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE
-);
-```
-
-数据预览：
+**地级数据预览**
 
 | code | name     | provinceCode |
 |:-----|:---------|:-------------|
@@ -148,22 +127,7 @@ CREATE TABLE IF NOT EXISTS `city` (
 | 1302 | 唐山市   | 13           |
 | 1303 | 秦皇岛市 | 13           |
 
-**县级数据模型**
-
-```sql
-CREATE TABLE IF NOT EXISTS `area` (
-  `code` VARCHAR(255) PRIMARY KEY,
-  `name` VARCHAR(255),
-  `cityCode` VARCHAR(255)
-    REFERENCES `city` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE,
-  `provinceCode` VARCHAR(255)
-    REFERENCES `province` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE
-);
-```
-
-数据预览：
+**县级数据预览**
 
 | code   | name     | cityCode | provinceCode |
 |:-------|:---------|:---------|:-------------|
@@ -171,25 +135,7 @@ CREATE TABLE IF NOT EXISTS `area` (
 | 110106 | 丰台区   | 1101     | 11           |
 | 110107 | 石景山区 | 1101     | 11           |
 
-**乡级数据模型**
-
-```sql
-CREATE TABLE IF NOT EXISTS `street` (
-  `code` VARCHAR(255) PRIMARY KEY,
-  `name` VARCHAR(255),
-  `areaCode` VARCHAR(255)
-    REFERENCES `area` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE,
-  `cityCode` VARCHAR(255)
-    REFERENCES `city` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE,
-  `provinceCode` VARCHAR(255)
-    REFERENCES `province` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE
-);
-```
-
-数据预览：
+**乡级数据预览**
 
 | code      | name             | areaCode | cityCode | provinceCode |
 |:----------|:-----------------|:---------|:---------|:-------------|
@@ -197,28 +143,7 @@ CREATE TABLE IF NOT EXISTS `street` (
 | 110101002 | 景山街道办事处   | 110101   | 1101     | 11           |
 | 110101003 | 交道口街道办事处 | 110101   | 1101     | 11           |
 
-**村级数据模型**
-
-```sql
-CREATE TABLE IF NOT EXISTS `village` (
-  `code` VARCHAR(255) PRIMARY KEY,
-  `name` VARCHAR(255),
-  `streetCode` VARCHAR(255)
-    REFERENCES `street` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE,
-  `areaCode` VARCHAR(255)
-    REFERENCES `area` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE,
-  `cityCode` VARCHAR(255)
-    REFERENCES `city` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE,
-  `provinceCode` VARCHAR(255)
-    REFERENCES `province` (`code`)
-    ON DELETE SET NULL ON UPDATE CASCADE
-);
-```
-
-数据预览：
+**村级数据预览**
 
 | code         | name       | streetCode | areaCode | cityCode | provinceCode |
 |:-------------|:-----------|:-----------|:---------|:---------|:-------------|
