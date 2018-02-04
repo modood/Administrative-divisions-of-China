@@ -108,7 +108,7 @@ $ npm test
 
 ## 数据库支持
 
-目前本项目抓取的数据保存在 sqlite3，数据文件下载：[sqlite.data](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/data.sqlite)。
+目前本项目抓取的数据保存在 sqlite3，数据文件下载：[data.sqlite](https://github.com/modood/Administrative-divisions-of-China/blob/master/dist/data.sqlite)。
 
 可以自己将数据迁移到其他数据库管理系统中（MySQL, Oracle, MSSQL 等）。
 
