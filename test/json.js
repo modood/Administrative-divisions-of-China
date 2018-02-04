@@ -5,48 +5,65 @@
  */
 /* eslint no-labels: ["error", { "allowLoop": true }] */
 
-var path = require('path')
 const assert = require('assert')
+const chinaDivision = require('..')
 
-const provinces = require(path.resolve(__dirname, '../dist/provinces.json'))
-const cities = require(path.resolve(__dirname, '../dist/cities.json'))
-const areas = require(path.resolve(__dirname, '../dist/areas.json'))
-const streets = require(path.resolve(__dirname, '../dist/streets.json'))
-const pc = require(path.resolve(__dirname, '../dist/pc.json'))
-const pcC = require(path.resolve(__dirname, '../dist/pc-code.json'))
-const pca = require(path.resolve(__dirname, '../dist/pca.json'))
-const pcaC = require(path.resolve(__dirname, '../dist/pca-code.json'))
-const pcas = require(path.resolve(__dirname, '../dist/pcas.json'))
-const pcasC = require(path.resolve(__dirname, '../dist/pcas-code.json'))
+const provinces = chinaDivision.provinces
+const cities = chinaDivision.cities
+const areas = chinaDivision.areas
+const streets = chinaDivision.streets
+const villages = chinaDivision.villages
+
+const pc = chinaDivision.pc
+const pcC = chinaDivision.pcC
+const pca = chinaDivision.pca
+const pcaC = chinaDivision.pcaC
+const pcas = chinaDivision.pcas
+const pcasC = chinaDivision.pcasC
 
 describe('中华人民共和国行政区划：', () => {
-  it('省份数据', () => {
+  it('“一级” 省级（省份、直辖市、自治区）数据', () => {
     const i = findElem(provinces, 'code', '11')
     assert(i !== -1)
     assert.equal(provinces[i].name, '北京市')
   })
 
-  it('城市数据', () => {
+  it('“二级” 地级（城市）数据', () => {
     const i = findElem(cities, 'code', '1401')
     assert(i !== -1)
     assert.equal(cities[i].name, '太原市')
-    assert.equal(cities[i].parent_code, '14')
+    assert.equal(cities[i].provinceCode, '14')
   })
 
-  it('区县数据', () => {
+  it('“三级” 县级（区县）数据', () => {
     const i = findElem(areas, 'code', '120110')
     assert(i !== -1)
     assert.equal(areas[i].name, '东丽区')
-    assert.equal(areas[i].parent_code, '1201')
+    assert.equal(areas[i].cityCode, '1201')
+    assert.equal(areas[i].provinceCode, '12')
   })
 
-  it('乡镇数据', () => {
+  it('“四级” 乡级（乡镇、街道）数据', () => {
     const i = findElem(streets, 'code', '441881124')
     assert(i !== -1)
     assert.equal(streets[i].name, '波罗镇')
-    assert.equal(streets[i].parent_code, '441881')
+    assert.equal(streets[i].areaCode, '441881')
+    assert.equal(streets[i].cityCode, '4418')
+    assert.equal(streets[i].provinceCode, '44')
   })
 
+  it('“五级” 村级（村委会、居委会）数据', () => {
+    const i = findElem(villages, 'code', '421303101216')
+    assert(i !== -1)
+    assert.equal(villages[i].name, '高庙村委会')
+    assert.equal(villages[i].streetCode, '421303101')
+    assert.equal(villages[i].areaCode, '421303')
+    assert.equal(villages[i].cityCode, '4213')
+    assert.equal(villages[i].provinceCode, '42')
+  })
+})
+
+describe('联动数据', () => {
   it('“省份、城市” 二级联动数据', () => {
     assert.ok(pc['浙江省'].indexOf('杭州市') !== -1)
     assert.ok(pc['河南省'].indexOf('济源市') !== -1)
