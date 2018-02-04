@@ -6,13 +6,14 @@
 /* eslint no-labels: ["error", { "allowLoop": true }] */
 
 const assert = require('assert')
-
 const chinaDivision = require('..')
 
 const provinces = chinaDivision.provinces
 const cities = chinaDivision.cities
 const areas = chinaDivision.areas
 const streets = chinaDivision.streets
+const villages = chinaDivision.villages
+
 const pc = chinaDivision.pc
 const pcC = chinaDivision.pcC
 const pca = chinaDivision.pca
@@ -21,33 +22,48 @@ const pcas = chinaDivision.pcas
 const pcasC = chinaDivision.pcasC
 
 describe('中华人民共和国行政区划：', () => {
-  it('省份数据', () => {
+  it('“一级” 省级（省份、直辖市、自治区）数据', () => {
     const i = findElem(provinces, 'code', '11')
     assert(i !== -1)
     assert.equal(provinces[i].name, '北京市')
   })
 
-  it('城市数据', () => {
+  it('“二级” 地级（城市）数据', () => {
     const i = findElem(cities, 'code', '1401')
     assert(i !== -1)
     assert.equal(cities[i].name, '太原市')
-    assert.equal(cities[i].parent_code, '14')
+    assert.equal(cities[i].provinceCode, '14')
   })
 
-  it('区县数据', () => {
+  it('“三级” 县级（区县）数据', () => {
     const i = findElem(areas, 'code', '120110')
     assert(i !== -1)
     assert.equal(areas[i].name, '东丽区')
-    assert.equal(areas[i].parent_code, '1201')
+    assert.equal(areas[i].cityCode, '1201')
+    assert.equal(areas[i].provinceCode, '12')
   })
 
-  it('乡镇数据', () => {
+  it('“四级” 乡级（乡镇、街道）数据', () => {
     const i = findElem(streets, 'code', '441881124')
     assert(i !== -1)
     assert.equal(streets[i].name, '波罗镇')
-    assert.equal(streets[i].parent_code, '441881')
+    assert.equal(streets[i].areaCode, '441881')
+    assert.equal(streets[i].cityCode, '4418')
+    assert.equal(streets[i].provinceCode, '44')
   })
 
+  it('“五级” 村级（村委会、居委会）数据', () => {
+    const i = findElem(villages, 'code', '421303101216')
+    assert(i !== -1)
+    assert.equal(villages[i].name, '高庙村委会')
+    assert.equal(villages[i].streetCode, '421303101')
+    assert.equal(villages[i].areaCode, '421303')
+    assert.equal(villages[i].cityCode, '4213')
+    assert.equal(villages[i].provinceCode, '42')
+  })
+})
+
+describe('联动数据', () => {
   it('“省份、城市” 二级联动数据', () => {
     assert.ok(pc['浙江省'].indexOf('杭州市') !== -1)
     assert.ok(pc['河南省'].indexOf('济源市') !== -1)
@@ -68,11 +84,11 @@ describe('中华人民共和国行政区划：', () => {
     for (let i = 0; i < pcC.length; i++) {
       const p = pcC[i]
       if (['台湾省', '香港特别行政区', '澳门特别行政区'].indexOf(p.name) === -1 &&
-        p.childs.length === 0) throw new Error(`数据：pc-code.json，${p.name}的城市列表为空！`)
+        p.children.length === 0) throw new Error(`数据：pc-code.json，${p.name}的城市列表为空！`)
 
       if (p.code === t[0].code && p.name === t[0].name) {
-        for (let j = 0; j < p.childs.length; j++) {
-          const c = p.childs[j]
+        for (let j = 0; j < p.children.length; j++) {
+          const c = p.children[j]
           if (c.code === t[1].code && c.name === t[1].name) {
             ok = true
             break loop
@@ -109,12 +125,12 @@ describe('中华人民共和国行政区划：', () => {
       const p = pcaC[i]
 
       if (p.code === t[0].code && p.name === t[0].name) {
-        for (let j = 0; j < p.childs.length; j++) {
-          const c = p.childs[j]
-          if (c.childs.length === 0) throw new Error(`数据：pca-code.json，${p.name}${c.name}的区县列表为空！`)
+        for (let j = 0; j < p.children.length; j++) {
+          const c = p.children[j]
+          if (c.children.length === 0) throw new Error(`数据：pca-code.json，${p.name}${c.name}的区县列表为空！`)
           if (c.code === t[1].code && c.name === t[1].name) {
-            for (let k = 0; k < c.childs.length; k++) {
-              const a = c.childs[k]
+            for (let k = 0; k < c.children.length; k++) {
+              const a = c.children[k]
               if (a.code === t[2].code && a.name === t[2].name) {
                 ok = true
                 break loop
@@ -159,15 +175,15 @@ describe('中华人民共和国行政区划：', () => {
       const p = pcasC[i]
 
       if (p.code === t[0].code && p.name === t[0].name) {
-        for (let j = 0; j < p.childs.length; j++) {
-          const c = p.childs[j]
+        for (let j = 0; j < p.children.length; j++) {
+          const c = p.children[j]
           if (c.code === t[1].code && c.name === t[1].name) {
-            for (let k = 0; k < c.childs.length; k++) {
-              const a = c.childs[k]
-              if (a.childs.length === 0) throw new Error(`数据：pcas-code.json，${p.name}${c.name}${a.name}的乡镇列表为空！`)
+            for (let k = 0; k < c.children.length; k++) {
+              const a = c.children[k]
+              if (a.children.length === 0) throw new Error(`数据：pcas-code.json，${p.name}${c.name}${a.name}的乡镇列表为空！`)
               if (a.code === t[2].code && a.name === t[2].name) {
-                for (let l = 0; l < a.childs.length; l++) {
-                  const s = a.childs[l]
+                for (let l = 0; l < a.children.length; l++) {
+                  const s = a.children[l]
                   if (s.code === t[3].code && s.name === t[3].name) {
                     ok = true
                     break loop
