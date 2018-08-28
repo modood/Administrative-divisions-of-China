@@ -155,12 +155,6 @@ $ npm test
 
 [![Stargazers over time](https://starcharts.herokuapp.com/modood/Administrative-divisions-of-China.svg)](https://starcharts.herokuapp.com/modood/Administrative-divisions-of-China)
 
-## Buy me a coffee
-
-![alipay](https://modood.com/images/alipay.jpg)
-
-![wechat](https://modood.com/images/wechat.jpg)
-
 ## Contributing
 
 1. Fork it
