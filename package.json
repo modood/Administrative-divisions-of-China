@@ -50,7 +50,7 @@
     "mocha": "^3.1.0",
     "sequelize": "^4.32.2",
     "sequelize-cursor-pagination": "^1.0.3",
-    "sqlite3": "^3.1.13"
+    "sqlite3": "^4.0.2"
   },
   "license": "MIT",
   "bugs": {
