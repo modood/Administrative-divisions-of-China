@@ -15,7 +15,7 @@
     * [中华人民共和国国家统计局-统计用区划和城乡划分代码](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/)
     * [中华人民共和国国家统计局-统计用区划代码和城乡划分代码编制规则](http://www.stats.gov.cn/tjsj/tjbz/200911/t20091125_8667.html)
 *   本项目已更新至：
-    * [2018年统计用区划代码和城乡划分代码（截止时间：2018-10-31，发布时间：2019-01-31）](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/index.html)
+    * [2019年统计用区划代码和城乡划分代码（截止时间：2019-10-31，发布时间：2020-02-25）](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2019/index.html)
 
 ## 数据下载
 
@@ -158,8 +158,6 @@ $ npm test
 | 450305004006 | 横塘社区       | 450305004  | 450305   | 4503     | 45           |
 
 ## Stargazers over time
-
-[![Flag Counter](https://s05.flagcounter.com/count2/uCWd/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_24/viewers_0/labels_1/pageviews_1/flags_0/percent_0/)](https://info.flagcounter.com/uCWd)
 
 [![Stargazers over time](https://starcharts.herokuapp.com/modood/Administrative-divisions-of-China.svg)](https://starcharts.herokuapp.com/modood/Administrative-divisions-of-China)
 
