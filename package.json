@@ -49,7 +49,7 @@
     "iconv-lite": "^0.4.15",
     "lodash": "^4.17.4",
     "mocha": "^3.1.0",
-    "sequelize": "^4.32.2",
+    "sequelize": "^5.15.1",
     "sequelize-cursor-pagination": "^1.0.3",
     "sqlite3": "^4.0.2"
   },
