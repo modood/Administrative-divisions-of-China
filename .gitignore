@@ -28,3 +28,6 @@ build/Release
 node_modules
 config/index.js
 .DS_Store
+yarn.lock
+package-lock.json
+

@@ -48,7 +48,7 @@
     "husky": "^0.13.4",
     "iconv-lite": "^0.4.15",
     "lodash": "^4.17.4",
-    "mocha": "^3.1.0",
+    "mocha": "^7.1.0",
     "sequelize": "^5.15.1",
     "sequelize-cursor-pagination": "^1.0.3",
     "sqlite3": "^4.0.2"
