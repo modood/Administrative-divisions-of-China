@@ -15,7 +15,7 @@
     * [中华人民共和国国家统计局-统计用区划和城乡划分代码](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/)
     * [中华人民共和国国家统计局-统计用区划代码和城乡划分代码编制规则](http://www.stats.gov.cn/tjsj/tjbz/200911/t20091125_8667.html)
 *   本项目已更新至：
-    * [2019年统计用区划代码和城乡划分代码（截止时间：2019-10-31，发布时间：2020-02-25）](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2019/index.html)
+    * [2020年统计用区划代码和城乡划分代码（截止时间：2020-06-30，发布时间：2020-11-06）](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2020/index.html)
 
 ## 数据下载
 
@@ -39,9 +39,23 @@
 ## 数据更新
 
 ```
-$ yarn
+$ npm install
 $ npm run fetch
 ```
+
+如果需要更新所有数据，只需删除现有数据重新抓取即可：
+
+```
+# 删除现有的数据
+$ rm dist/*.csv && rm dist/[a-z]*.json && rm dist/data.sqlite && touch dist/data.sqlite
+
+# 拉数据（这个步骤比较耗时）
+$ npm run fetch
+
+# 格式化 json csv 和联动数据等
+$ npm run build
+```
+
 ```
 [1/1]正在抓取省级数据...
 
