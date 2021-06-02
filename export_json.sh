@@ -52,12 +52,12 @@ sqlite3 ./dist/data.sqlite "SELECT code,name,areaCode,cityCode,provinceCode FROM
       printf "]";
    }' | tr '|' '"' > ./dist/streets.json
 
-sqlite3 ./dist/data.sqlite "SELECT code,name,streetCode,areaCode,cityCode,provinceCode FROM village ORDER BY code;" | awk -F'|' '
-   { code[++i]=$1; name[i]=$2; streetCode[i]=$3; areaCode[i]=$4; cityCode[i]=$5; provinceCode[i]=$6 }
+sqlite3 ./dist/data.sqlite "SELECT code,name,type,streetCode,areaCode,cityCode,provinceCode FROM village ORDER BY code;" | awk -F'|' '
+   { code[++i]=$1; name[i]=$2; type[i]=$3; streetCode[i]=$4; areaCode[i]=$5; cityCode[i]=$6; provinceCode[i]=$7 }
    END {
       printf "[";
       for(j=1;j<=i;j++){
-         printf "{|code|:|%s|,|name|:|%s|,|streetCode|:|%s|,|areaCode|:|%s|,|cityCode|:|%s|,|provinceCode|:|%s|",code[j],name[j],streetCode[j],areaCode[j],cityCode[j],provinceCode[j]
+         printf "{|code|:|%s|,|name|:|%s|,|type|:|%s|,|streetCode|:|%s|,|areaCode|:|%s|,|cityCode|:|%s|,|provinceCode|:|%s|",code[j],name[j],type[j],streetCode[j],areaCode[j],cityCode[j],provinceCode[j]
          closing="},"
          if(j==i){closing="}"}
          printf closing;

@@ -56,6 +56,7 @@ describe('中华人民共和国行政区划：', () => {
     const i = findElem(villages, 'code', '421303101216')
     assert(i !== -1)
     assert.equal(villages[i].name, '高庙村委会')
+    // assert.equal(villages[i].type, '112')
     assert.equal(villages[i].streetCode, '421303101')
     assert.equal(villages[i].areaCode, '421303')
     assert.equal(villages[i].cityCode, '4213')
