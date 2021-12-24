@@ -124,4 +124,4 @@ sqlite3 ./dist/data.sqlite "SELECT code,name,streetCode,areaCode,cityCode,provin
    }' | tr '|' '"' > ./dist/MySQL-villages.sql
 
 # 导入本地 MySQL 的 test 库
-for SQL in dist/*.sql; do mysql -uroot test < $SQL; done
+for SQL in dist/MySQL*.sql; do mysql -uroot test < $SQL; done
