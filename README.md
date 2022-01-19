@@ -1,7 +1,6 @@
 # Administrative-divisions-of-China
 
 [![code style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![dependencies](https://david-dm.org/modood/Administrative-divisions-of-China.svg)](https://david-dm.org/modood/Administrative-divisions-of-China)
 [![npm](https://img.shields.io/npm/v/china-division.svg)](https://www.npmjs.com/package/china-division)
 [![downloads](https://img.shields.io/npm/dt/china-division.svg)](https://www.npmjs.com/package/china-division)
 [![license](https://img.shields.io/badge/license-WTFPL%20--%20Do%20What%20the%20Fuck%20You%20Want%20to%20Public%20License-green.svg)](https://raw.githubusercontent.com/modood/Administrative-divisions-of-China/master/LICENSE)
@@ -15,7 +14,7 @@
     * [中华人民共和国国家统计局-统计用区划和城乡划分代码](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/)
     * [中华人民共和国国家统计局-统计用区划代码和城乡划分代码编制规则](http://www.stats.gov.cn/tjsj/tjbz/200911/t20091125_8667.html)
 *   本项目已更新至：
-    * [2020年统计用区划代码和城乡划分代码（截止时间：2020-06-30，发布时间：2020-11-06）](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2020/index.html)
+    * [2021年统计用区划代码和城乡划分代码（截止时间：2021-10-31，发布时间：2021-12-30）](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/index.html)
 
 ## 数据下载
 
@@ -170,10 +169,6 @@ $ npm test
 | 140121102001 | 东于社区居委会 | 140121102  | 140121   | 1401     | 14           |
 | 152527201206 | 敦达乌苏嘎查   | 152527201  | 152527   | 1525     | 15           |
 | 450305004006 | 横塘社区       | 450305004  | 450305   | 4503     | 45           |
-
-## Stargazers over time
-
-[![Stargazers over time](https://starcharts.herokuapp.com/modood/Administrative-divisions-of-China.svg)](https://starcharts.herokuapp.com/modood/Administrative-divisions-of-China)
 
 ## Contributing
 
