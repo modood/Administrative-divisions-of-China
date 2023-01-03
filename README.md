@@ -14,7 +14,7 @@
     * [中华人民共和国国家统计局-统计用区划和城乡划分代码](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/)
     * [中华人民共和国国家统计局-统计用区划代码和城乡划分代码编制规则](http://www.stats.gov.cn/tjsj/tjbz/200911/t20091125_8667.html)
 *   本项目已更新至：
-    * [2021年统计用区划代码和城乡划分代码（截止时间：2021-10-31，发布时间：2021-12-30）](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/index.html)
+    * [2022年统计用区划代码和城乡划分代码（截止时间：2022-10-31，发布时间：2022-12-29）](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2022/index.html)
 
 ## 数据下载
 
